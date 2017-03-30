@@ -171,10 +171,6 @@ header #banner_title{
   margin: 0 auto;
 }
 
-
-
-
-
 #news{
   width: 70%;
   background-color: pink;
@@ -184,8 +180,8 @@ header #banner_title{
 
 article{
   /*border: 1px solid #ccc;*/
-  width: 50%;
-  height: 250px;
+  width: 33.3%;
+  height: 300px;
   float: left;
   background-color: #EDEDED;
 }
@@ -195,7 +191,7 @@ article div{
   height: 80px;
   background-color: white;
   margin-bottom: 0px;
-  top: 150px;
+  top: 203px;
   position: relative;
 }
 
