@@ -593,13 +593,9 @@ font-weight: normal;
 }
 */
 #general_layout{
- background-color: purple;
+ /*background-color: purple;*/
  margin: 0px;
  padding: 0px;
-}
-
-#industria_layout{
-  padding: 
 }
 
 #industria_layout h3{
@@ -613,11 +609,8 @@ font-weight: normal;
 
 }
 
-
-
-
 #in_layout_head{
-/*border-bottom: 1px solid #ccc;*/
+  /*border-bottom: 1px solid #ccc;*/
 }
 
 
@@ -627,11 +620,9 @@ font-weight: normal;
 }
 
 #industria_layout ul{
-   text-align: center;
-  /*border: 1px solid #ccc;*/
-  
-    width: 90%;
-    margin-left: 3%;
+  text-align: center;
+  width: 90%;
+  margin-left: 3%;
 
 }
 
@@ -650,8 +641,6 @@ font-weight: normal;
   color: #89B868;
   padding-right: 10px;
 }
-
-
 
 
 #specifics{
@@ -683,7 +672,6 @@ font-weight: normal;
 
 
 #specifics ul li p{
-
   padding: 0px 80px 0px 50px;
   text-align: justify;
 }
@@ -698,7 +686,6 @@ font-weight: normal;
 #in_image{
   width: 250px;
   height: 150px;
-  /*border: 1px solid #ccc;*/
   padding: 60px 80px 0px 50px;
   background-image: url("../images/images/military2.jpg");
   margin: 0 auto;
@@ -708,15 +695,12 @@ font-weight: normal;
  #text{
   width: 60%;
   float: left;
-/*  background: purple;*/
 }
 
 h5 {
   color: #494949;
   font-size:11pt;
   font-weight: normal;
-
-
 }
 
 
@@ -754,7 +738,6 @@ h5 {
 
 
 /*FOOTER */
-
 footer{
   width: 100%;
   max-width: 1280px;
@@ -776,13 +759,6 @@ footer li{
   display: inline-block;
 
 }
-
-/*
-
-section{
-  float: left;
-}*/
-
 
 #p_contact{
   width: 50%;
@@ -814,8 +790,8 @@ margin: 50px  0px;
 
 
 #contact_info{
-float: left;
-width:59.5%;
+  float: left;
+  width:59.5%;
 }
 
 #contact_form{
@@ -836,7 +812,7 @@ width:59.5%;
 #contact_form h3 {
   border-bottom: 1px solid #ccc;
   text-align: left;
- padding-left: 45px;
+  padding-left: 45px;
 }
 
 #contact_form input,textarea{ 
@@ -859,8 +835,6 @@ textarea{
   border-top: 1px solid #666;
 }
 
-
-
 #tab_menu ul{
   margin: 0;
   padding: 0;
@@ -882,8 +856,6 @@ textarea{
   height: 100%;
   border: 1px solid green;
 }
-
-
 
 .tab_title{
   height: 100%;
@@ -938,7 +910,6 @@ padding-top: 12%;
   left: 0;
   right: 0;
 }
-
 
 
 /* COMPONENTS INDEX 
@@ -1009,8 +980,6 @@ padding-top: 12%;
 }
 
 /* Individual Caption Styles */
-
-
 
 /* Caption Style 3 */
 .cs-style-3 figure {
@@ -1521,7 +1490,6 @@ th {
   padding-top: 10px;
   width: 90%;
   font-size: 11pt;
-
 }
 
 #news article div p{
