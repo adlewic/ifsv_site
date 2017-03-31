@@ -592,8 +592,15 @@ font-weight: normal;
    background-color: #EFEFEF;
 }
 */
+#general_layout{
+ background-color: purple;
+ margin: 0px;
+ padding: 0px;
+}
 
-
+#industria_layout{
+  padding: 
+}
 
 #industria_layout h3{
   padding: 10px 60px;
@@ -605,6 +612,9 @@ font-weight: normal;
   font-weight: normal;
 
 }
+
+
+
 
 #in_layout_head{
 /*border-bottom: 1px solid #ccc;*/
@@ -640,6 +650,9 @@ font-weight: normal;
   color: #89B868;
   padding-right: 10px;
 }
+
+
+
 
 #specifics{
   width: 100%;
