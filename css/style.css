@@ -1,4 +1,4 @@
-@import('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import ('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 html {
   font-size: 62.5%;}
@@ -129,9 +129,6 @@ a{
 	color: #666666;
 	text-decoration: none;
 }
-
-
-
 
 #title{
   width: 100%;
@@ -1486,7 +1483,6 @@ optgroup {
 
 /* Tables
    ========================================================================== */
-
 /**
  * Remove most spacing between table cells.
  */
@@ -1500,12 +1496,6 @@ td,
 th {
   padding: 0;
 }
-
-
-
-
-
-
 
 
 #news article div h4{
