@@ -24,6 +24,8 @@
 		// scripts
 		wp_enqueue_script( 'plugins', JSPATH.'plugins.js', array('jquery'), '1.0', true );
 		wp_enqueue_script( 'functions', JSPATH.'functions.js', array('plugins'), '1.0', true );
+		wp_enqueue_script( 'modernizer', JSPATH.'modernizr.custom.js', array('plugins'), '1.0', true );
+		wp_enqueue_script( 'toucheffects', JSPATH.'toucheffects.js', array('plugins'), '1.0', true );
 
 		// localize scripts
 		wp_localize_script( 'functions', 'ajax_url', admin_url('admin-ajax.php') );

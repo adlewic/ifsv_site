@@ -1,7 +1,7 @@
 			<footer>
 				<div class="twelve columns">  
 					<div class="three columns">
-						<img id="logo_white" src="images/v_logos/logo_white.png">
+						<img id="logo_white" src="<?php echo get_template_directory_uri(); ?>/images/v_logos/logo_white.png">
 					</div>
 					
 					<div class="three columns">
@@ -14,8 +14,8 @@
 						info@veyron.com.mx
 					</div>
 					<div class="four columns">
-						<li> <a href="#"> <img  class="ico" src="images/icons/linkedin.svg"> </li></a>
-						<li> <a href="#"> <img  class="icons" src="images/icons/youtube.svg"> </li> </a>
+						<li> <a href="#"> <img  class="ico" src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin.svg"> </li></a>
+						<li> <a href="#"> <img  class="icons" src="<?php echo get_template_directory_uri(); ?>/images/icons/youtube.svg"> </li> </a>
 				
 					</div>
 				</div>
