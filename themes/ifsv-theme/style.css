@@ -1,19 +1,76 @@
-@import ƒ('https://fonts.googleapis.com/css?family=Roboto:300,400');
+/*
+Theme Name: IFSV Theme
+Theme URI: http://cubeinthebox.com
+Author: Holkan Luna
+Author URI: http://cubeinthebox.com
+Description: Tema de WordPress Personalizado
+Version: 1.0
+*/
 
-html {
-  font-size: 62.5%;}
+@charset 'utf-8';
 
-body {
-  font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #222; 
-  background-color: #f5f5f5;
-  width: 100%;
-  height: 100%;
-}
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
 
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+/*HTML5 element display*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+/*Figures*/
+figure {margin: 0;}
+
+/* Utilities */
+.lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+* { box-sizing: border-box; }
+
+/* clearfix for modern browsers */
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+
+/*** FONT FACE ***/
+
+
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.first{ margin-left: 0; padding-left: 0;}
+.last{ margin-right: 0; padding-right: 0;}
+
+.left{ float: left;}
+.right{ float: right;}
+
+.hidden{display: none!important;}
+
+
+
+/*** GENERAL ***/
 
 #principal{
   /*border: 1px solid white;*/
@@ -130,9 +187,6 @@ a{
 	text-decoration: none;
 }
 
-
-
-
 #title{
   width: 100%;
    max-width: 1280px;
@@ -171,10 +225,6 @@ header #banner_title{
   margin: 0 auto;
 }
 
-
-
-
-
 #news{
   width: 70%;
   background-color: pink;
@@ -184,8 +234,8 @@ header #banner_title{
 
 article{
   /*border: 1px solid #ccc;*/
-  width: 50%;
-  height: 250px;
+  width: 33.3%;
+  height: 300px;
   float: left;
   background-color: #EDEDED;
 }
@@ -195,7 +245,7 @@ article div{
   height: 80px;
   background-color: white;
   margin-bottom: 0px;
-  top: 150px;
+  top: 203px;
   position: relative;
 }
 
@@ -488,8 +538,80 @@ hr{
       height: 50px;}
 
 
+
+
+
+
+
+
+
+
+/*redesign industrias */
+
 #general_menu{
-/*  background-color: #CCC;*/
+/*min-width: 1280px;*/
+/*min-width: 600px;*/
+margin: 0px;
+padding: 0px;
+}
+
+#general_menu ul{
+  width: 98%;
+  margin-top: 10px;
+  padding: 0px;
+  /*border: 1px solid purple;*/
+  height: 1500px;
+  float: right;
+}
+
+
+#general_menu li{
+list-style-type: none;
+float: left;
+border: .5px solid #ccc;
+width: 340px;
+height: 400px;
+margin: 30px 30px 30px 35px;
+padding: 0px;
+text-align: center;
+}
+
+
+#general_menu li:hover{
+-webkit-box-shadow: 0px 0px 22px 0px rgba(222,222,222,1);
+-moz-box-shadow: 0px 0px 22px 0px rgba(222,222,222,1);
+box-shadow: 0px 0px 22px 0px rgba(222,222,222,1);
+  -webkit-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-out;
+}
+
+#general_menu li h4 {
+margin: 0px;
+ color: #7ec917;
+letter-spacing: 1px;
+text-align: center;
+font-weight: normal;
+
+}
+
+.g_icons{
+/*border: 1px solid purple;*/
+  width: 60%;
+  margin: 25px 25px;
+}
+
+/*#general_menu li:hover{
+  background-color: #fff;
+}
+
+
+///////* ENDredesign industrias */
+
+
+
+
+/*regular one column design */
+/*#general_menu{
   width: 20%;
   float: left;
 }
@@ -499,21 +621,22 @@ hr{
    padding: 0px;
 }
 
+
 #general_menu li{
   list-style-type: none;
   text-align: center;
-  /*background-color: purple;*/
   margin: 0px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-     background-color: inherit;
-        background-color: #EFEFEF;
-         cursor: pointer;
-    transition: 0.3s;
+  background-color: inherit;
+  background-color: #EFEFEF;
+  cursor: pointer;
+   transition: 0.3s;
 }
+*/
 
-#general_menu li:hover{
+/*#general_menu li:hover{
   background-color: #fff;
 }
 
@@ -521,16 +644,7 @@ hr{
 #general_menu li.active{
    background-color: #EFEFEF;
 }
-
-
-#general_layout{
-/*background-color: grey;*/
-
-width: 80%;
-float: right;
-}
-
-
+*/
 
 
 
@@ -637,19 +751,44 @@ float: right;
 /*  background: purple;*/
 }
 
-#customer{
+h5 {
+  color: #494949;
+  font-size:11pt;
+  font-weight: normal;
+
+
+}
+
+
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+
+}
+
+#customers_info  h5{
+  padding: 50px 220px;
+}
+
+#all_customers{
   width: 100%;
+  border-top: 1px solid #ccc;
+  height: 200px;
 }
 
 #single_customer{
-  border: 1px solid #ccc;
-  width: 33%;
-  height: 300;
+  width: 33.2%;
+  height: 250px;
+  float: left;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 
-
-
+#single_customer img{
+  /*border: 1px solid #ccc;*/
+  width: 340px;
+  margin: 60px 20px 20px 40px;
+}
 
 
 
@@ -709,10 +848,50 @@ margin: 50px  0px;
   background-color: white;
 }
 
-#form{
-  background-color: white;
+#contact_general{
+  border-top: 1px solid #ccc;
 }
 
+
+#contact_info{
+float: left;
+width:59.5%;
+}
+
+#contact_form{
+  /*background-color: #ccc;*/
+  width: 40%;
+  height: 100%;
+  padding: 50px 0px;
+  padding-bottom: 100px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #ccc;
+}
+
+
+#contact_form form {
+  padding-top: 50px;
+}
+#contact_form h3 {
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+ padding-left: 45px;
+}
+
+#contact_form input,textarea{ 
+  width: 80%;
+  margin-top: 20px;
+}
+
+
+
+textarea{
+  /*background-color: green;*/
+  height: 50px;
+  min-height: 120px;
+  max-height: 150px;
+}
 
 
 .base{
@@ -763,6 +942,7 @@ padding-top: 12%;
   float: left;
   background-color: #ccc;
 }
+
 
 
 /*HOVER STYLES 
@@ -1360,7 +1540,6 @@ optgroup {
 
 /* Tables
    ========================================================================== */
-
 /**
  * Remove most spacing between table cells.
  */
@@ -1374,12 +1553,6 @@ td,
 th {
   padding: 0;
 }
-
-
-
-
-
-
 
 
 #news article div h4{
@@ -1397,4 +1570,3 @@ th {
   margin: 0px 20px 0px 20px;
   float: right;
 }
-
