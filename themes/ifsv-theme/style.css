@@ -165,11 +165,8 @@ nav div{
 	float: left;
 }
 
-nav div #logo{
-	width: 130px;
-	margin: 30px 0 0 70px;
-	float: left;
-}
+/*hk*/
+nav h1#logo{width: 130px;height: 50px;margin: 20px 0 0 70px;float: left;background: url(./images/v_logos/logo.jpg);background-position: center;background-size: 100%; background-repeat: no-repeat;}
 
 nav div ul{
 	margin: 35px 0 0 40px;

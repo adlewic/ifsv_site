@@ -1,12 +1,12 @@
-<?php get_header(); ?>
+<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
 		 <!-- small header -->
 		<header>
 			<div id="title">
-				<h3> Clientes </h3>
+				<h3> <?php the_title(); ?> </h3>
 			</div>		
 			<div id="banner">	
 				<div id="banner_title">
-					<h2> Lorem ipsum lorem </h2>
+					<h2> <?php the_excerpt(); ?> </h2>
 				</div>
 			</div>
 		</header>
