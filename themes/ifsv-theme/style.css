@@ -229,13 +229,16 @@ header #banner_title{
   float: left;
 }
 
-article{
-  /*border: 1px solid #ccc;*/
+/*Article news*/
+.post-type-archive-noticias article.single_post{width:33.3%;display:inline-block;}
+
+/*article{
   width: 33.3%;
   height: 300px;
   float: left;
   background-color: #EDEDED;
 }
+
 
 article div{
   width: 100%;
@@ -245,6 +248,8 @@ article div{
   top: 203px;
   position: relative;
 }
+*/
+.single_post div img{width:100%;height:auto;}
 
 
 .static{

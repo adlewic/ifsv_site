@@ -161,6 +161,12 @@
 		return ' <br> <a href="'.get_permalink().'" >leer más...</a>';
 	});
 
+// ADD EXCERPT FOR PAGES //////////////////////////////////////////////////////////
+	add_action( 'init', 'ifsv_add_excerpts_to_pages' );
+	function ifsv_add_excerpts_to_pages() {
+	     add_post_type_support( 'page', 'excerpt' );
+	}
+
 
 
 // REMOVE ACCENTS AND THE LETTER Ñ FROM FILE NAMES ///////////////////////////////////
