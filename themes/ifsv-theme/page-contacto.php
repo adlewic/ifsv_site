@@ -12,8 +12,6 @@
 </header>
 
 <div id="wrapper">
-
-
 	<div id="customers_info">
 		<h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
