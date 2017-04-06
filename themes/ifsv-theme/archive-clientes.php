@@ -21,20 +21,17 @@
 		</h5>
 	</div>
 
-
-
 	<div class="border" id="all_customers">
-
 
 		<!--  post_cliente -->
 		<a href="#">	
 			<figure id="single_customer" class="imghvr-fade-in-left">
 			  <img src="images/g_logos/galdisa.png">
 			  <figcaption>
-			  		<h4> Galdisa , bla bla </h4>
-		  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					empor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-					amet, consectetur adipisicing elit, sed do eiusmod
+			  		<h4> <?php the_title(); ?> </h4>
+		  				<p>
+		  					 <?php the_content(); ?>
+						</p>
 			  </figcaption>
 			</figure>   
 		</a>
@@ -44,3 +41,6 @@
 
 </div><!-- wrapper -->
 <?php get_footer(); ?>
+
+
+ 	

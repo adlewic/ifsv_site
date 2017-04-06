@@ -33,8 +33,11 @@
 								<?php the_post_thumbnail(); ?>
 							</div>
 							<div>
-								<h4> Title news  Title news</h4>
-							 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing eli.</p>
+								<h4> <?php the_title(); ?> </h4>
+							 	<p>
+							 		Lorem ipsum dolor sit amet, consectetur adipiscing eli.
+
+							 	</p>
 							</div>
 						</article>
 					<!-- END post_noticia -->
