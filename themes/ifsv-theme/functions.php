@@ -152,14 +152,21 @@
 
 
 
-	/*add_filter('excerpt_length', function($length){
+
+	add_filter('excerpt_length', function($length){
 		return 20;
-	});*/
+	});
 
 
-	/*add_filter('excerpt_more', function(){
-		return ' &raquo;';
-	});*/
+	add_filter('excerpt_more', function(){
+		return ' <br> <a href="'.get_permalink().'" >leer más...</a>';
+	});
+
+// ADD EXCERPT FOR PAGES //////////////////////////////////////////////////////////
+	add_action( 'init', 'ifsv_add_excerpts_to_pages' );
+	function ifsv_add_excerpts_to_pages() {
+	     add_post_type_support( 'page', 'excerpt' );
+	}
 
 
 

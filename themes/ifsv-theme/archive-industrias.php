@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php get_header(); ?>
 <div id="wrapper">
 
@@ -59,6 +60,33 @@
 				Retail
 		 </li>
 	</ul>
+=======
+<?php get_header();?>
+<div id="wrapper">
+
+<div id="general_menu">
+	<?php 
+		if(have_posts()):
+		?>
+			<ul>
+			<?php	
+				while(have_posts()):
+					the_post();
+				?>
+					<li> 
+						<button>
+							<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+							<?php the_title(); ?>
+						</button>
+					</li>
+			<?php 
+				endwhile;
+				?>
+			</ul>
+	<?php
+		endif;
+		?>
+>>>>>>> cf66b4919c9e7cd7080af3f90160b6b5268b0008
 </div>
 
 
@@ -85,7 +113,11 @@
 				<ul>
 					<li> <span>  ● </span> Fabricacion de Automoviles  </li>
 					<li> <span>  ● </span> Concecionarios de Automoviles </li>
+<<<<<<< HEAD
 					<li> <span>  ● </span>  porvedores de automoviles  </li>
+=======
+					<li> <span>  ● </span> Porveedores de automoviles  </li>
+>>>>>>> cf66b4919c9e7cd7080af3f90160b6b5268b0008
 
 				</ul>
 		
