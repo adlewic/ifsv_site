@@ -1,6 +1,6 @@
 WordPress Base Theme
 =============
-![Taller de Código](http://cubeinthebox.com/wp-content/themes/cube/screenshot.png)
+![Cubeinthebox](http://cubeinthebox.com/wp-content/themes/cube/screenshot.png)
 
 Usar para iniciar un nuevo tema de WordPress
 
