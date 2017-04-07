@@ -1,11 +1,9 @@
 WordPress Base Theme
-=============
 ![Cubeinthebox](http://cubeinthebox.com/wp-content/themes/cube/screenshot.png)
 
 Usar para iniciar un nuevo tema de WordPress
 
 ### Credits
-
 Link: http://www.cubeinthebox.com/<br />
 Contributors: Holkan Luna<br />
 Tags: wordpress, themes<br />

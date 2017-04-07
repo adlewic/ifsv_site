@@ -149,9 +149,6 @@
 
 
 // THE EXECRPT FORMAT AND LENGTH /////////////////////////////////////////////////////
-
-
-
 	add_filter('excerpt_length', function($length){
 		return 20;
 	});

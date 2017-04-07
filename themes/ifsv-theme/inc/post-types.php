@@ -146,5 +146,6 @@
 		);
 		register_post_type( 'noticias', $args );
 
+
 		
 	});
