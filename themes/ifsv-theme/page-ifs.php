@@ -48,7 +48,7 @@
 		<div id="sec_third">
 			<div>
 				<p>
-					IFS Applications includes financials, human re- sources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
+					IFS Applications includes financials, human resources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
 				</p>
 			</div>
 

@@ -144,8 +144,7 @@
 			'taxonomies'         => array( 'category' ),
 			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' )
 		);
+
 		register_post_type( 'noticias', $args );
-
-
 		
 	});

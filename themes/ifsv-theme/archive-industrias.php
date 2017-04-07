@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header();?>
 <div id="wrapper">
 
@@ -59,42 +58,24 @@
 
 		<div id="specifics">
 				<ul>
-					<!-- specific individual -->
-					<li>			
-						<div id="image">
-							<div id="in_image">
-							</div>
-						</div>
-
-						<div id="text">
-							<h4>  Logistica militar </h4>
-							<p>
-								IFS logra un enfoque integrado de la planificación de la estrategia, el movimiento táctico y mantenimiento de los activos militares en combinación con la ingeniería de mantenimiento general, la adquisición, el almacenamiento, la distribución, la eliminación y la planificación de recursos dentro de una solución única de Defensa.
-							</p>
-						</div>
-					</li>
-					<!-- end -->
-
-						<!-- specific individual -->
-					<li>			
-						<div id="image">
-							<div id="in_image">
-							</div>
-						</div>
-
-						<div id="text">
-							<h4>  Logistica militar </h4>
-							<p>
-								IFS logra un enfoque integrado de la planificación de la estrategia, el movimiento táctico y mantenimiento de los activos militares en combinación con la ingeniería de mantenimiento general, la adquisición, el almacenamiento, la distribución, la eliminación y la planificación de recursos dentro de una solución única de Defensa.
-							</p>
-						</div>
-					</li>
-					<!-- end -->
+				<?php	
+					while(have_posts()):
+						the_post();
+					?>
+						<li> 
+							<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+							<h4> <?php the_title(); ?></h4>
+						</li>
+				<?php 
+					endwhile;
+					?>
 				</ul>
-		</div>
-</div> <!-- general layout end  -->
+		<?php
+			endif;
+			?>
+	</div>
 
 <!-- wrapper -->
-	</div>
+</div>
 
 <?php get_footer(); ?>	

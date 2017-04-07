@@ -10,16 +10,7 @@
 				</div>
 			</div>
 		</header>
-
 		<div id="wrapper">
-
-			<div id="customers_info">
-				<h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-				 amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</h5>
-			</div>
 		<!-- allposts_NoticiaS -->
 			<div id="all_news" class="post_pool">
 			<?php 
@@ -33,8 +24,10 @@
 								<?php the_post_thumbnail(); ?>
 							</div>
 							<div>
-								<h4> Title news  Title news</h4>
-							 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing eli.</p>
+								<h4> <?php the_title(); ?> </h4>
+							 	<p>
+							 		 <?php the_content(); ?>
+							 	</p>
 							</div>
 						</article>
 					<!-- END post_noticia -->

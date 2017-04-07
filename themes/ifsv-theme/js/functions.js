@@ -5,7 +5,7 @@
 	$(function(){
 
 
-		console.log('hello from functions.js');
+		console.log('hello from .js');
 
 
 		/**

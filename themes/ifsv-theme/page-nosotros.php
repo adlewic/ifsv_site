@@ -35,7 +35,6 @@
 			<!-- single customer  -->
 			<figure id="single_customer" class="imghvr-push-left">
 			  <img src="<?php echo get_template_directory_uri(); ?>/images/g_logos/galdisa.png">
-
 			  <figcaption>
 			  		<h4> Galdisa , bla bla </h4>
 		  			 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -44,11 +43,6 @@
 			  </figcaption>
 			</figure>   
 			<!-- single customer end  -->
-		
-
 		</div> 
-
-
-		
 </div><!-- wrapper -->
 <?php get_footer(); ?>
