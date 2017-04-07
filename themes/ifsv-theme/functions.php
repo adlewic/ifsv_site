@@ -32,6 +32,8 @@
 
 		// styles
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
+		wp_enqueue_style( 'font-avesome', CSSPATH.'font-awesome-4.7.0/css/font-awesome.min.css' );
+		wp_enqueue_style( 'imagehover', CSSPATH.'imagehover.css' );
 
 	});
 
