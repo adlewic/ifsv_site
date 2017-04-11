@@ -29,6 +29,9 @@
 					        <li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/noticias">Noticias </a></li>
 					       	<li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/contacto">Contacto</a></li>
 					    </ul>
+
+
+					    
 				  	</div>
 				</nav>	<!-- navegation bar -->
 		 	</header>
