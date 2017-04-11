@@ -32,6 +32,8 @@
 
 		// styles
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
+		wp_enqueue_style( 'font-avesome', CSSPATH.'font-awesome-4.7.0/css/font-awesome.min.css' );
+		wp_enqueue_style( 'imagehover', CSSPATH.'imagehover.css' );
 
 	});
 
@@ -149,17 +151,20 @@
 
 
 // THE EXECRPT FORMAT AND LENGTH /////////////////////////////////////////////////////
-
-
-
-	/*add_filter('excerpt_length', function($length){
+	add_filter('excerpt_length', function($length){
 		return 20;
-	});*/
+	});
 
 
-	/*add_filter('excerpt_more', function(){
-		return ' &raquo;';
-	});*/
+	add_filter('excerpt_more', function(){
+		return ' <br> <a href="'.get_permalink().'" >leer más...</a>';
+	});
+
+// ADD EXCERPT FOR PAGES //////////////////////////////////////////////////////////
+	add_action( 'init', 'ifsv_add_excerpts_to_pages' );
+	function ifsv_add_excerpts_to_pages() {
+	     add_post_type_support( 'page', 'excerpt' );
+	}
 
 
 

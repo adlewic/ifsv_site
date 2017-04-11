@@ -1,12 +1,12 @@
-<?php get_header(); ?>
+<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
 <!-- small header -->
 	<header>
 		<div id="title">
-			<h3> IFS Applications </h3>
+			<h3> <?php the_title(); ?> Applications </h3>
 		</div>		
 		<div id="banner">	
 			<div id="banner_title">
-				<h2> IFS Applications la solución ERP integrada para la empresa Ágil.  </h2>
+				<h2><?php the_excerpt(); ?></h2>
 			</div>
 		</div>
 	</header>
@@ -14,10 +14,10 @@
 	<div id="wrapper">
 	<!-- section 1  -->
 		<div id="sec_first">
-			<div id="one"> IFS </div>	
+			<div id="one"> <?php the_title(); ?> </div>	
 			<div id="two">	
 				<p>
-				   IFS es un ERP que puede implementarse poco a poco sin necesidad de reconfiguraciones, sus distintos componentes  pueden operar de manera independiente entre si y sin la parte financiera lo que les permite funcionar como soluciones especializadas para varias industrias.  Todo eso con el poder de la integración cuando une dos o mas componentes para trabajar juntos, algo novedoso que IFS invento desde su nacimiento.
+				   <?php the_content(); ?>
 				</p>
 			</div>
 		</div>
@@ -26,19 +26,19 @@
 		<div id="sec_second">
 			<ul id="ifs_menu">
 				<li>
-					<img class="ifs_icon" src="images/g_icons/tool.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/tool.svg">
 					<h4> gestión de servicios y activos</h4>
 				</li>
 				<li>
-					<img class="ifs_icon" src="images/g_icons/factory.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/factory.svg">
 					<h4> fabricación </h4> 
 				</li>
 				<li>
-					<img class="ifs_icon" src="images/g_icons/states.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/states.svg">
 					<h4> proyectos </h4> 
 				</li>
 				<li>
-					<img class="ifs_icon" src="images/g_icons/conect.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/conect.svg">
 					<h4> gestión de cadena de suministros </h4> 
 				</li>
 			</ul>
@@ -47,9 +47,8 @@
 	<!-- section 3  -->
 		<div id="sec_third">
 			<div>
-
 				<p>
-					IFS Applications includes financials, human re- sources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
+					IFS Applications includes financials, human resources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
 				</p>
 			</div>
 

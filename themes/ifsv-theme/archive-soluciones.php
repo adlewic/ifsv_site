@@ -1,8 +1,8 @@
-<?php get_header(); ?>
+<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
 	 <!-- small header -->
 <header>
 	<div id="title">
-		<h3> Clientes </h3>
+		<h3> Soluciones </h3>
 	</div>		
 	<div id="banner">	
 		<div id="banner_title">
@@ -20,4 +20,6 @@
 		</h5>
 	</div>
 </div>
+
+
 <?php get_footer(); ?>

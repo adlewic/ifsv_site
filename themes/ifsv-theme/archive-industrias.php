@@ -1,64 +1,28 @@
-<?php get_header(); ?>
+<?php get_header();?>
 <div id="wrapper">
 
 <div id="general_menu">
-	<ul>
-		<!-- one  -->
-		<li> 
-			<button>
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Aeroespacial y Defensa
-			</button>
-		</li>
-
-		 <!-- two -->
-		 <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Gestión y Mantenimiento de Activos
-		 </li>
-
-		 <!-- three -->
-		 <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Automotriz
-		 </li>
-
-		 <!-- four -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Construcción
-		 </li>
-
-	  <!-- five -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Energía y Utilities
-		 </li>
-
-		 <!-- six -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Industria Manufacturera
-		 </li>
-
-		  <!-- seven -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Petróleo y Gas 
-		 </li>
-
- 		  <!-- seven -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Fabricación por Procesos
-		 </li>
-
-	   	<!-- seven -->
-		  <li> 
-			<img class="g_icons" src="./images/g_icons/jet.svg"><br>
-				Retail
-		 </li>
-	</ul>
+	<?php 
+		if(have_posts()):
+		?>
+			<ul>
+			<?php	
+				while(have_posts()):
+					the_post();
+				?>
+					<li> 
+						<button>
+							<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+							<?php the_title(); ?>
+						</button>
+					</li>
+			<?php 
+				endwhile;
+				?>
+			</ul>
+	<?php
+		endif;
+		?>
 </div>
 
 
@@ -85,8 +49,7 @@
 				<ul>
 					<li> <span>  ● </span> Fabricacion de Automoviles  </li>
 					<li> <span>  ● </span> Concecionarios de Automoviles </li>
-					<li> <span>  ● </span>  porvedores de automoviles  </li>
-
+					<li> <span>  ● </span> Porveedores de automoviles  </li>
 				</ul>
 		
 		</div><!-- industria layout end-->
@@ -95,42 +58,24 @@
 
 		<div id="specifics">
 				<ul>
-					<!-- specific individual -->
-					<li>			
-						<div id="image">
-							<div id="in_image">
-							</div>
-						</div>
-
-						<div id="text">
-							<h4>  Logistica militar </h4>
-							<p>
-								IFS logra un enfoque integrado de la planificación de la estrategia, el movimiento táctico y mantenimiento de los activos militares en combinación con la ingeniería de mantenimiento general, la adquisición, el almacenamiento, la distribución, la eliminación y la planificación de recursos dentro de una solución única de Defensa.
-							</p>
-						</div>
-					</li>
-					<!-- end -->
-
-						<!-- specific individual -->
-					<li>			
-						<div id="image">
-							<div id="in_image">
-							</div>
-						</div>
-
-						<div id="text">
-							<h4>  Logistica militar </h4>
-							<p>
-								IFS logra un enfoque integrado de la planificación de la estrategia, el movimiento táctico y mantenimiento de los activos militares en combinación con la ingeniería de mantenimiento general, la adquisición, el almacenamiento, la distribución, la eliminación y la planificación de recursos dentro de una solución única de Defensa.
-							</p>
-						</div>
-					</li>
-					<!-- end -->
+				<?php	
+					while(have_posts()):
+						the_post();
+					?>
+						<li> 
+							<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+							<h4> <?php the_title(); ?></h4>
+						</li>
+				<?php 
+					endwhile;
+					?>
 				</ul>
-		</div>
-</div> <!-- general layout end  -->
+		<?php
+			endif;
+			?>
+	</div>
 
 <!-- wrapper -->
-	</div>
+</div>
 
 <?php get_footer(); ?>	
