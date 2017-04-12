@@ -155,15 +155,13 @@ nav div ul li{
   display: inline-block;
   width: 120px;
   text-align: center;
-  font-weight: 300;
 }
 
 
 a{
   color: #666666;
   text-decoration: none;
-}
-
+    font-weight: 100;
 
 
 
@@ -518,13 +516,6 @@ hr{
 
 
 
-
-
-
-
-
-
-
 /*redesign industrias */
 
 #general_menu{
@@ -606,45 +597,6 @@ font-weight: normal;
     width: 90%;
     margin-left: 3%;
 
-}
-
-
-
-
-#general_soluciones{
-margin: 0px;
-padding: 0px;
-}
-
-#general_soluciones ul{
-  width: 100%;
-  margin-top: 10px;
-  padding: 0px;
-  border: 1px solid purple;
-  height: 1500px;
-  float: right;
-}
-
-
-#general_soluciones li{
-list-style-type: none;
-float: left;
-border: .5px solid #ccc;
-width: 550px;
-height: 300px;
-margin: 30px 30px 30px 35px;
-padding: 0px;
-text-align: center;
-
-}
-
-
-#general_soluciones img{
-  width: 150px;
-}
-
-#general_soluciones p{
-  text-align: justify;
 }
 
 
@@ -1568,3 +1520,17 @@ th {
  * hhh  hhh kkk   kkk nnn   nnn
 */
 #contact_info h4{width:40px; height: 40px;font-size: 30px; padding:25px 5%;display:inline-block;}
+
+
+
+
+
+#general_soluciones {
+  background-color: grey;
+}
+
+
+
+#general_soluciones img {
+width: 100PX;
+}
