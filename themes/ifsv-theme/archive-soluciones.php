@@ -1,4 +1,4 @@
-<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
+<?php get_header();?>
 	 <!-- small header -->
 <header>
 	<div id="title">
@@ -10,6 +10,7 @@
 		</div>
 	</div>
 </header>
+
 <div id="wrapper">
 
 	<div id="customers_info">
@@ -19,6 +20,32 @@
 		tempor incididunt ut labore et dolore magna aliqua.
 		</h5>
 	</div>
+</div>
+
+
+
+<div id="wrapper">
+
+<div id="general_soluciones">
+	<?php 
+		if(have_posts()):
+		?>
+			<ul>
+			<?php	
+				while(have_posts()):
+					the_post();
+				?>
+					<li> 
+						<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+							<h4> <?php the_title(); ?></h4>
+					</li>
+			<?php 
+				endwhile;
+				?>
+			</ul>
+	<?php
+		endif;
+		?>
 </div>
 
 

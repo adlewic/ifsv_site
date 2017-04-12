@@ -579,53 +579,6 @@ font-weight: normal;
   margin: 25px 25px;
 }
 
-/*#general_menu li:hover{
-  background-color: #fff;
-}
-
-
-///////* ENDredesign industrias */
-
-
-
-
-/*regular one column design */
-/*#general_menu{
-  width: 20%;
-  float: left;
-}
-
-#general_menu ul{
-    margin: 0px;
-   padding: 0px;
-}
-
-
-#general_menu li{
-  list-style-type: none;
-  text-align: center;
-  margin: 0px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  background-color: inherit;
-  background-color: #EFEFEF;
-  cursor: pointer;
-   transition: 0.3s;
-}
-*/
-
-/*#general_menu li:hover{
-  background-color: #fff;
-}
-
-
-#general_menu li.active{
-   background-color: #EFEFEF;
-}
-*/
-
-
 
 #industria_layout h3{
   padding: 10px 60px;
@@ -650,12 +603,50 @@ font-weight: normal;
 
 #industria_layout ul{
    text-align: center;
-  /*border: 1px solid #ccc;*/
-  
     width: 90%;
     margin-left: 3%;
 
 }
+
+
+
+
+#general_soluciones{
+margin: 0px;
+padding: 0px;
+}
+
+#general_soluciones ul{
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px;
+  border: 1px solid purple;
+  height: 1500px;
+  float: right;
+}
+
+
+#general_soluciones li{
+list-style-type: none;
+float: left;
+border: .5px solid #ccc;
+width: 550px;
+height: 300px;
+margin: 30px 30px 30px 35px;
+padding: 0px;
+text-align: center;
+
+}
+
+
+#general_soluciones img{
+  width: 150px;
+}
+
+#general_soluciones p{
+  text-align: justify;
+}
+
 
 #industria_layout li{
   display: inline-block;
