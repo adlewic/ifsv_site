@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	 <!-- small header -->
+<div id="wrapper">
 		<section id="title">
 			
 		</section>		
@@ -34,4 +35,6 @@
 				</article>
 			</section>
 		</section>
+
+</div>
 <?php get_footer(); ?>
