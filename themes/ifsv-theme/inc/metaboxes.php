@@ -9,7 +9,7 @@
 
 		add_meta_box( 'telefono', 'Información de contacto', 'name_meta_callback', 'page', 'side', 'high' );
 		add_meta_box( 'specs', 'Información de la industria', 'ifs_get_info_industry', 'industrias', 'side', 'high' );
-		add_meta_box( 'specs', 'Información de soluciones', 'ifs_get_info_industry', 'soluciones', 'side', 'high' );
+		add_meta_box( 'specs', 'Información de soluciones', 'ifs_get_info_solutions', 'soluciones', 'side', 'high' );
 
 	});
 
@@ -50,7 +50,16 @@
 
 	function ifs_get_info_industry($post){
 		$_spec1_arr_meta  = get_post_meta($post->ID, '_spec1_arr_meta', true);
-
+		$title_meta_1 = '';
+		$desc_meta_1 = '';
+		$title_meta_2 = '';
+		$desc_meta_2 = '';
+		$title_meta_3 = '';
+		$desc_meta_3 = '';
+		$title_meta_4 = '';
+		$desc_meta_4 = '';
+		$title_meta_5 = '';
+		$desc_meta_5 = '';
 		$count = 0;
 		foreach ($_spec1_arr_meta as $key => $value) {
 			switch ($count) {
@@ -73,7 +82,8 @@
 			    case 4:
 			        $title_meta_5 = $key;
 			        $desc_meta_5 = $value;
-			        break;
+			        break;        
+
 			    default:
 			    $title_meta_1 = ''; $desc_meta_1 = '';
 			    $title_meta_2 = ''; $desc_meta_2 = '';
@@ -115,59 +125,76 @@
 
 	function ifs_get_info_solutions($post){
 		$_spec1_arr_meta  = get_post_meta($post->ID, '_spec1_arr_meta_s', true);
-		$_spec2_arr_meta  = get_post_meta($post->ID, '_spec2_arr_meta_s', true);
-		$_spec3_arr_meta  = get_post_meta($post->ID, '_spec3_arr_meta_s', true);
-		$_spec4_arr_meta  = get_post_meta($post->ID, '_spec4_arr_meta_s', true);
-		$_spec5_arr_meta  = get_post_meta($post->ID, '_spec5_arr_meta_s', true);
-
-
-		$title_meta1 = ''; $desc_meta1 = '';
+		$count = 0;
+		$title_meta1_s = '';
+		$desc_meta1_s = '';
+		$title_meta2_s = '';
+		$desc_meta2_s = '';
+		$title_meta3_s = '';
+		$desc_meta3_s = '';
+		$title_meta4_s = '';
+		$desc_meta4_s = '';
+		$title_meta5_s = '';
+		$desc_meta5_s = '';
 		if($_spec1_arr_meta){
-			foreach ($_spec1_arr_meta as $key1 => $value1) {$title_meta1 = $key1;$desc_meta1 = $value1;}
+			foreach ($_spec1_arr_meta as $key => $value) {
+				switch ($count) {
+					case 0:
+						$title_meta1_s = $key;
+						$desc_meta1_s = $value;
+						break;
+					case 1:
+						$title_meta2_s = $key;
+						$desc_meta2_s = $value;
+						break;
+					case 2:
+						$title_meta3_s = $key;
+						$desc_meta3_s = $value;
+						break;
+					case 3:
+						$title_meta4_s = $key;
+						$desc_meta4_s = $value;
+						break;
+					case 4:
+						$title_meta5_s = $key;
+						$desc_meta5_s = $value;
+						break;				
+					
+					default:
+						$title_meta1_s = ''; $desc_meta1_s = '';
+						$title_meta2_s = ''; $desc_meta2_s = '';
+						$title_meta3_s = ''; $desc_meta3_s = '';
+						$title_meta4_s = ''; $desc_meta4_s = '';
+						$title_meta5_s = ''; $desc_meta5_s = '';
+						break;
+				}
+				$count ++;
+			}
 		}
+
 		echo "<label for='spec1_t'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec1_t' name='_spec1_title_s' value='$title_meta1' placeholder='Nombre' /></br>";
-		echo "<textarea type='text' class='widefat' id='spec1_d' name='_spec1_desc_s' placeholder='Descripción'>$desc_meta1</textarea></br>";
+		echo "<input type='text' class='widefat' id='spec1_t' name='_spec1_title_s' value='$title_meta1_s' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec1_d' name='_spec1_desc_s' placeholder='Descripción'>$desc_meta1_s</textarea></br>";
 
-		$title_meta2 = ''; $desc_meta2 = '';
-		if($_spec2_arr_meta){
-			foreach ($_spec2_arr_meta as $key2 => $value2) {$title_meta2 = $key2;$desc_meta2 = $value2;}
-		}
 		echo "<label for='spec2_t'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec2_t' name='_spec2_title_s' value='$title_meta2' placeholder='Nombre' /></br>";
-		echo "<textarea type='text' class='widefat' id='spec2_d' name='_spec2_desc_s' placeholder='Descripción'>$desc_meta2</textarea></br>";
+		echo "<input type='text' class='widefat' id='spec2_t' name='_spec2_title_s' value='$title_meta2_s' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec2_d' name='_spec2_desc_s' placeholder='Descripción'>$desc_meta2_s</textarea></br>";
 
-		$title_meta3 = ''; $desc_meta3 = '';
-		if($_spec3_arr_meta){
-			foreach ($_spec3_arr_meta as $key3 => $value3) {$title_meta3 = $key3;$desc_meta3 = $value3;}
-		}
 		echo "<label for='spec3_t'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec3_t' name='_spec3_title_s' value='$title_meta3' placeholder='Nombre' /></br>";
-		echo "<textarea type='text' class='widefat' id='spec3_d' name='_spec3_desc_s' placeholder='Descripción'>$desc_meta3</textarea></br>";
+		echo "<input type='text' class='widefat' id='spec3_t' name='_spec3_title_s' value='$title_meta3_s' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec3_d' name='_spec3_desc_s' placeholder='Descripción'>$desc_meta3_s</textarea></br>";
 
-		$title_meta4 = ''; $desc_meta4 = '';
-		if($_spec4_arr_meta){
-			foreach ($_spec4_arr_meta as $key4 => $value4) {$title_meta4 = $key4;$desc_meta4 = $value4;}
-		}
 		echo "<label for='spec4_t'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec4_t' name='_spec4_title_s' value='$title_meta4' placeholder='Nombre' /></br>";
-		echo "<textarea type='text' class='widefat' id='spec4_d' name='_spec4_desc_s' placeholder='Descripción'>$desc_meta4</textarea></br>";
+		echo "<input type='text' class='widefat' id='spec4_t' name='_spec4_title_s' value='$title_meta4_s' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec4_d' name='_spec4_desc_s' placeholder='Descripción'>$desc_meta4_s</textarea></br>";
 
-		$title_meta5 = ''; $desc_meta5 = '';
-		if($_spec5_arr_meta){
-			foreach ($_spec5_arr_meta as $key5 => $value5) {$title_meta5 = $key5;$desc_meta5 = $value5;}
-		}
 		echo "<label for='spec5_t'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec5_t' name='_spec5_title_s' value='$title_meta5' placeholder='Nombre' /></br>";
-		echo "<textarea type='text' class='widefat' id='spec5_d' name='_spec5_desc_s' placeholder='Descripción'>$desc_meta5</textarea></br>";
+		echo "<input type='text' class='widefat' id='spec5_t' name='_spec5_title_s' value='$title_meta5_s' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec5_d' name='_spec5_desc_s' placeholder='Descripción'>$desc_meta5_s</textarea></br>";
 
 
 
-		wp_nonce_field(__FILE__, '_spec1_arr_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec2_arr_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec3_arr_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec4_arr_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec5_arr_meta_nonce');
+		wp_nonce_field(__FILE__, '_spec1_arr_meta_s_nonce');
 
 	}
 
@@ -222,26 +249,6 @@
 			update_post_meta($post_id, '_spec1_arr_meta', $arr_meta1);
 		}
 
-		// if ( isset($_POST['_spec2_title']) && isset($_POST['_spec2_desc']) ){
-		// 	$arr_meta2 = array($_POST['_spec2_title']=>$_POST['_spec2_desc']);
-		// 	update_post_meta($post_id, '_spec2_arr_meta', $arr_meta2);
-		// }
-
-		// if ( isset($_POST['_spec3_title']) && isset($_POST['_spec3_desc']) ){
-		// 	$arr_meta3 = array($_POST['_spec3_title']=>$_POST['_spec3_desc']);
-		// 	update_post_meta($post_id, '_spec3_arr_meta', $arr_meta3);
-		// }
-
-		// if ( isset($_POST['_spec4_title']) && isset($_POST['_spec4_desc']) ){
-		// 	$arr_meta4 = array($_POST['_spec4_title']=>$_POST['_spec4_desc']);
-		// 	update_post_meta($post_id, '_spec4_arr_meta', $arr_meta4);
-		// }
-
-		// if ( isset($_POST['_spec5_title']) && isset($_POST['_spec5_desc']) ){
-		// 	$arr_meta5 = array($_POST['_spec5_title']=>$_POST['_spec5_desc']);
-		// 	update_post_meta($post_id, '_spec5_arr_meta', $arr_meta5);
-		// }
-
 
 
 
@@ -250,30 +257,17 @@
 		 * SOLUCIONES
 		*/
 
-		if ( isset($_POST['_spec1_title_s']) && isset($_POST['_spec1_desc_s']) ){
-			$arr_meta1 = array($_POST['_spec1_title_s']=>$_POST['_spec1_desc_s']);
+		if ( isset($_POST['_spec1_title_s']) && isset($_POST['_spec1_desc_s']) && isset($_POST['_spec2_title_s']) && isset($_POST['_spec2_desc_s']) && isset($_POST['_spec3_title_s']) && isset($_POST['_spec3_desc_s']) && isset($_POST['_spec4_title_s']) && isset($_POST['_spec4_desc_s']) && isset($_POST['_spec5_title_s']) && isset($_POST['_spec5_desc_s']) ){
+			$arr_meta1 = array(
+				$_POST['_spec1_title_s']=>$_POST['_spec1_desc_s'],
+				$_POST['_spec2_title_s']=>$_POST['_spec2_desc_s'],
+				$_POST['_spec3_title_s']=>$_POST['_spec3_desc_s'],
+				$_POST['_spec4_title_s']=>$_POST['_spec4_desc_s'],
+				$_POST['_spec5_title_s']=>$_POST['_spec5_desc_s'],
+				);
 			update_post_meta($post_id, '_spec1_arr_meta_s', $arr_meta1);
 		}
 
-		if ( isset($_POST['_spec2_title_s']) && isset($_POST['_spec2_desc_s']) ){
-			$arr_meta2 = array($_POST['_spec2_title_s']=>$_POST['_spec2_desc_s']);
-			update_post_meta($post_id, '_spec2_arr_meta_s', $arr_meta2);
-		}
-
-		if ( isset($_POST['_spec3_title_s']) && isset($_POST['_spec3_desc_s']) ){
-			$arr_meta3 = array($_POST['_spec3_title_s']=>$_POST['_spec3_desc_s']);
-			update_post_meta($post_id, '_spec3_arr_meta_s', $arr_meta3);
-		}
-
-		if ( isset($_POST['_spec4_title_s']) && isset($_POST['_spec4_desc_s']) ){
-			$arr_meta4 = array($_POST['_spec4_title_s']=>$_POST['_spec4_desc_s']);
-			update_post_meta($post_id, '_spec4_arr_meta_s', $arr_meta4);
-		}
-
-		if ( isset($_POST['_spec5_title_s']) && isset($_POST['_spec5_desc_s']) ){
-			$arr_meta5 = array($_POST['_spec5_title_s']=>$_POST['_spec5_desc_s']);
-			update_post_meta($post_id, '_spec5_arr_meta_s', $arr_meta5);
-		}
 
 
 

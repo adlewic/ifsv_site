@@ -16,14 +16,16 @@
 				<ul>
 					<?php 
 						$_spec1_arr_meta  = get_post_meta($post->ID, '_spec1_arr_meta', true);
-						foreach ($_spec1_arr_meta as $key => $value):
+						if($_spec1_arr_meta):
+							foreach ($_spec1_arr_meta as $key => $value):
 					?>
-							<li>
-								<h4><?php echo esc_html($key); ?></h4>
-								<p><?php echo esc_html($value); ?></p>
-							</li>
+								<li>
+									<h4><?php echo esc_html($key); ?></h4>
+									<p><?php echo esc_html($value); ?></p>
+								</li>
 					<?php 
-						endforeach;
+							endforeach;
+						endif;	
 					?>
 				</ul>
 			</div>
