@@ -49,59 +49,61 @@
 
 
 	function ifs_get_info_industry($post){
-		$spec1  = get_post_meta($post->ID, '_spec1_meta', true);
-		$spec2  = get_post_meta($post->ID, '_spec2_meta', true);
-		$spec3  = get_post_meta($post->ID, '_spec3_meta', true);
-		$spec4  = get_post_meta($post->ID, '_spec4_meta', true);
-		$spec5  = get_post_meta($post->ID, '_spec5_meta', true);
-		$spec6  = get_post_meta($post->ID, '_spec6_meta', true);
-		$spec7  = get_post_meta($post->ID, '_spec7_meta', true);
-		$spec8  = get_post_meta($post->ID, '_spec8_meta', true);
-		$spec9  = get_post_meta($post->ID, '_spec9_meta', true);
-		$spec10 = get_post_meta($post->ID, '_spec10_meta', true);
+		$_spec1_arr_meta  = get_post_meta($post->ID, '_spec1_arr_meta', true);
+		$_spec2_arr_meta  = get_post_meta($post->ID, '_spec2_arr_meta', true);
+		$_spec3_arr_meta  = get_post_meta($post->ID, '_spec3_arr_meta', true);
+		$_spec4_arr_meta  = get_post_meta($post->ID, '_spec4_arr_meta', true);
+		$_spec5_arr_meta  = get_post_meta($post->ID, '_spec5_arr_meta', true);
 
 
-		echo "<label for='spec1'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec1' name='_spec1_meta' value='$spec1'/></br>";
+		$title_meta1 = ''; $desc_meta1 = '';
+		if($_spec1_arr_meta){
+			foreach ($_spec1_arr_meta as $key1 => $value1) {$title_meta1 = $key1;$desc_meta1 = $value1;}
+		}
+		echo "<label for='spec1_t'><strong>Especificación</strong></label><br>";
+		echo "<input type='text' class='widefat' id='spec1_t' name='_spec1_title' value='$title_meta1' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec1_d' name='_spec1_desc' placeholder='Descripción'>$desc_meta1</textarea></br>";
 
-		echo "<label for='spec2'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec2' name='_spec2_meta' value='$spec2'/></br>";
+		$title_meta2 = ''; $desc_meta2 = '';
+		if($_spec2_arr_meta){
+			foreach ($_spec2_arr_meta as $key2 => $value2) {$title_meta2 = $key2;$desc_meta2 = $value2;}
+		}
+		echo "<label for='spec2_t'><strong>Especificación</strong></label><br>";
+		echo "<input type='text' class='widefat' id='spec2_t' name='_spec2_title' value='$title_meta2' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec2_d' name='_spec2_desc' placeholder='Descripción'>$desc_meta2</textarea></br>";
 
-		echo "<label for='spec3'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec3' name='_spec3_meta' value='$spec3'/></br>";
+		$title_meta3 = ''; $desc_meta3 = '';
+		if($_spec3_arr_meta){
+			foreach ($_spec3_arr_meta as $key3 => $value3) {$title_meta3 = $key3;$desc_meta3 = $value3;}
+		}
+		echo "<label for='spec3_t'><strong>Especificación</strong></label><br>";
+		echo "<input type='text' class='widefat' id='spec3_t' name='_spec3_title' value='$title_meta3' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec3_d' name='_spec3_desc' placeholder='Descripción'>$desc_meta3</textarea></br>";
 
-		echo "<label for='spec4'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec4' name='_spec4_meta' value='$spec4'/></br>";
+		$title_meta4 = ''; $desc_meta4 = '';
+		if($_spec4_arr_meta){
+			foreach ($_spec4_arr_meta as $key4 => $value4) {$title_meta4 = $key4;$desc_meta4 = $value4;}
+		}
+		echo "<label for='spec4_t'><strong>Especificación</strong></label><br>";
+		echo "<input type='text' class='widefat' id='spec4_t' name='_spec4_title' value='$title_meta4' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec4_d' name='_spec4_desc' placeholder='Descripción'>$desc_meta4</textarea></br>";
 
-		echo "<label for='spec5'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec5' name='_spec5_meta' value='$spec5'/></br>";
-
-		echo "<label for='spec6'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec6' name='_spec6_meta' value='$spec6'/></br>";
-
-		echo "<label for='spec7'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec7' name='_spec7_meta' value='$spec7'/></br>";
-
-		echo "<label for='spec8'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec8' name='_spec8_meta' value='$spec8'/></br>";
-
-		echo "<label for='spec9'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec9' name='_spec9_meta' value='$spec9'/></br>";
-
-		echo "<label for='spec10'><strong>Especificación</strong></label><br>";
-		echo "<input type='text' class='widefat' id='spec10' name='_spec10_meta' value='$spec10'/></br>";
+		$title_meta5 = ''; $desc_meta5 = '';
+		if($_spec5_arr_meta){
+			foreach ($_spec5_arr_meta as $key5 => $value5) {$title_meta5 = $key5;$desc_meta5 = $value5;}
+		}
+		echo "<label for='spec5_t'><strong>Especificación</strong></label><br>";
+		echo "<input type='text' class='widefat' id='spec5_t' name='_spec5_title' value='$title_meta5' placeholder='Nombre' /></br>";
+		echo "<textarea type='text' class='widefat' id='spec5_d' name='_spec5_desc' placeholder='Descripción'>$desc_meta5</textarea></br>";
 
 
-		wp_nonce_field(__FILE__, '_spec1_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec2_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec3_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec4_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec5_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec6_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec7_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec8_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec9_meta_nonce');
-		wp_nonce_field(__FILE__, '_spec10_meta_nonce');
+
+		wp_nonce_field(__FILE__, '_spec1_arr_meta_nonce');
+		wp_nonce_field(__FILE__, '_spec2_arr_meta_nonce');
+		wp_nonce_field(__FILE__, '_spec3_arr_meta_nonce');
+		wp_nonce_field(__FILE__, '_spec4_arr_meta_nonce');
+		wp_nonce_field(__FILE__, '_spec5_arr_meta_nonce');
+		
 	}
 
 
@@ -203,45 +205,31 @@
 		 * INDUSTRIAS
 		*/
 
-		if ( isset($_POST['_spec1_meta']) and check_admin_referer(__FILE__, '_spec1_meta_nonce') ){
-			update_post_meta($post_id, '_spec1_meta', $_POST['_spec1_meta']);
+		if ( isset($_POST['_spec1_title']) && isset($_POST['_spec1_desc']) ){
+			$arr_meta1 = array($_POST['_spec1_title']=>$_POST['_spec1_desc']);
+			update_post_meta($post_id, '_spec1_arr_meta', $arr_meta1);
 		}
 
-		if ( isset($_POST['_spec2_meta']) and check_admin_referer(__FILE__, '_spec2_meta_nonce') ){
-			update_post_meta($post_id, '_spec2_meta', $_POST['_spec2_meta']);
+		if ( isset($_POST['_spec2_title']) && isset($_POST['_spec2_desc']) ){
+			$arr_meta2 = array($_POST['_spec2_title']=>$_POST['_spec2_desc']);
+			update_post_meta($post_id, '_spec2_arr_meta', $arr_meta2);
 		}
 
-		if ( isset($_POST['_spec3_meta']) and check_admin_referer(__FILE__, '_spec3_meta_nonce') ){
-			update_post_meta($post_id, '_spec3_meta', $_POST['_spec3_meta']);
+		if ( isset($_POST['_spec3_title']) && isset($_POST['_spec3_desc']) ){
+			$arr_meta3 = array($_POST['_spec3_title']=>$_POST['_spec3_desc']);
+			update_post_meta($post_id, '_spec3_arr_meta', $arr_meta3);
 		}
 
-		if ( isset($_POST['_spec4_meta']) and check_admin_referer(__FILE__, '_spec4_meta_nonce') ){
-			update_post_meta($post_id, '_spec4_meta', $_POST['_spec4_meta']);
+		if ( isset($_POST['_spec4_title']) && isset($_POST['_spec4_desc']) ){
+			$arr_meta4 = array($_POST['_spec4_title']=>$_POST['_spec4_desc']);
+			update_post_meta($post_id, '_spec4_arr_meta', $arr_meta4);
 		}
 
-		if ( isset($_POST['_spec5_meta']) and check_admin_referer(__FILE__, '_spec5_meta_nonce') ){
-			update_post_meta($post_id, '_spec5_meta', $_POST['_spec5_meta']);
+		if ( isset($_POST['_spec5_title']) && isset($_POST['_spec5_desc']) ){
+			$arr_meta5 = array($_POST['_spec5_title']=>$_POST['_spec5_desc']);
+			update_post_meta($post_id, '_spec5_arr_meta', $arr_meta5);
 		}
 
-		if ( isset($_POST['_spec6_meta']) and check_admin_referer(__FILE__, '_spec6_meta_nonce') ){
-			update_post_meta($post_id, '_spec6_meta', $_POST['_spec6_meta']);
-		}
-
-		if ( isset($_POST['_spec7_meta']) and check_admin_referer(__FILE__, '_spec7_meta_nonce') ){
-			update_post_meta($post_id, '_spec7_meta', $_POST['_spec7_meta']);
-		}
-
-		if ( isset($_POST['_spec8_meta']) and check_admin_referer(__FILE__, '_spec8_meta_nonce') ){
-			update_post_meta($post_id, '_spec8_meta', $_POST['_spec8_meta']);
-		}
-
-		if ( isset($_POST['_spec9_meta']) and check_admin_referer(__FILE__, '_spec9_meta_nonce') ){
-			update_post_meta($post_id, '_spec9_meta', $_POST['_spec9_meta']);
-		}
-
-		if ( isset($_POST['_spec10_meta']) and check_admin_referer(__FILE__, '_spec10_meta_nonce') ){
-			update_post_meta($post_id, '_spec10_meta', $_POST['_spec10_meta']);
-		}
 
 
 
