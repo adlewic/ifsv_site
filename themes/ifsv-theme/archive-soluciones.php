@@ -26,7 +26,7 @@
 
 <div id="wrapper">
 
-<div id="general_soluciones">
+<div id="general_menu">
 	<?php 
 		if(have_posts()):
 		?>
