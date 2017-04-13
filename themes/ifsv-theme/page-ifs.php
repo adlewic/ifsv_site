@@ -4,7 +4,7 @@
 		<div id="title">
 			<h3> <?php the_title(); ?> Applications </h3>
 		</div>		
-		<div id="banner">	
+		<div id="banner" class="ifs">	
 			<div id="banner_title">
 				<h2><?php the_excerpt(); ?></h2>
 			</div>

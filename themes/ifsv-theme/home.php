@@ -5,7 +5,7 @@
 			
 		</section>		
 
-		<section id="banner">
+		<section id="banner" class="b0">
 			<div id="principal"><?php echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit"; ?></div>
 		</section>
 	
@@ -23,10 +23,10 @@
 
 			<section>
 				<article class="static">
-					<img id="ifs_logo" src="images/v_logos/IFS.png">
+					<img id="ifs_logo" src="images/v_logos/ifs.png">
 					<br><br><br>
 					<h3> 
-						<?php echo 'IFS Applications solutions that enable capability management'; ?>
+						<?php echo 'IFS Applications soluciones que permiten la gestion de capacidades'; ?>
 					</h3>
 				</article>
 
