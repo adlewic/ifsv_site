@@ -26,8 +26,11 @@
 							while($noticias->have_posts()):
 								$noticias->the_post();
 							?>
-								<article>
+								<article class="clearfix">
 									<div>
+										<div class="img_news">
+											<?php the_post_thumbnail(); ?>
+										</div>
 										 <h4> <?php the_title(); ?></h4>
 										 <p>
 											<?php the_content(); ?>

@@ -211,7 +211,7 @@ header #banner_title{
 #news{
   width: 70%;
   background-color: pink;
-  height: 500px;
+  /*height: 500px;*/
   float: left;
 }
 
@@ -242,7 +242,7 @@ article div{
 
 #second{ background-color: #E0DAEA;}
 
-section{width: 30%;height: 500px;float: left;}
+/*section{width: 30%;height: 500px;float: left;}*/
 
 #ifs_logo{
   /*border: 1px solid pink;*/
@@ -1521,6 +1521,11 @@ th {
  * hhh  hhh kkk   kkk nnn   nnn
 */
 #contact_info h4{width:40px; height: 40px;font-size: 30px; padding:25px 5%;display:inline-block;}
+.img_news{width:100%;text-align: center;height:250px;position:relative;overflow: hidden;}
+.img_news img{width:100%;height:auto;position:absolute;top:-9999px;left:-9999px;right:-9999px;bottom:-9999px;margin:auto;}
+#news article{margin-bottom:60px;}
+#news article div p{padding:5px 20px 0px 20px;}
+#news article div h4{padding:5px 20px 0px 40px;}
 
 
 
