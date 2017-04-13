@@ -232,6 +232,8 @@ header #banner_title{
   float: left;
   background-color: #EDEDED;
 }
+
+
 article div{
   width: 100%;
   height: 80px;
@@ -746,6 +748,7 @@ footer li{
 }
 
 /*
+
 section{
   float: left;
 }*/
