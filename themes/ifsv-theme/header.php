@@ -20,8 +20,8 @@
 					<a href="<?php echo home_url(); ?>"><h1 id="logo" class="logo_header"><!--Espacio del logo--></h1></a>
 			     	<div>
 					    <ul> 
-					        <!-- <li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/nosotros">Nosotros</a></li>  
-					        <li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/consultoria">Consultoría</a></li> -->    
+					        <li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/nosotros">Nosotros</a></li>  
+					        <li ><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/consultoria">Consultoría</a></li>    
 					        <li><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/ifs"> I F S </a></li>
 					        <li><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/industrias"> Industrias </a></li>
 				            <li><a class="hvr-underline-from-center" href="<?php echo bloginfo('url'); ?>/soluciones"> Soluciones</a></li>

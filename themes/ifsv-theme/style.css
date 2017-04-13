@@ -155,15 +155,13 @@ nav div ul li{
   display: inline-block;
   width: 120px;
   text-align: center;
-  font-weight: 300;
 }
 
 
 a{
   color: #666666;
   text-decoration: none;
-}
-
+    font-weight: 100;
 
 
 
@@ -518,13 +516,6 @@ hr{
 
 
 
-
-
-
-
-
-
-
 /*redesign industrias */
 
 #general_menu{
@@ -579,53 +570,6 @@ font-weight: normal;
   margin: 25px 25px;
 }
 
-/*#general_menu li:hover{
-  background-color: #fff;
-}
-
-
-///////* ENDredesign industrias */
-
-
-
-
-/*regular one column design */
-/*#general_menu{
-  width: 20%;
-  float: left;
-}
-
-#general_menu ul{
-    margin: 0px;
-   padding: 0px;
-}
-
-
-#general_menu li{
-  list-style-type: none;
-  text-align: center;
-  margin: 0px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  background-color: inherit;
-  background-color: #EFEFEF;
-  cursor: pointer;
-   transition: 0.3s;
-}
-*/
-
-/*#general_menu li:hover{
-  background-color: #fff;
-}
-
-
-#general_menu li.active{
-   background-color: #EFEFEF;
-}
-*/
-
-
 
 #industria_layout h3{
   padding: 10px 60px;
@@ -650,12 +594,11 @@ font-weight: normal;
 
 #industria_layout ul{
    text-align: center;
-  /*border: 1px solid #ccc;*/
-  
     width: 90%;
     margin-left: 3%;
 
 }
+
 
 #industria_layout li{
   display: inline-block;
@@ -1577,3 +1520,17 @@ th {
  * hhh  hhh kkk   kkk nnn   nnn
 */
 #contact_info h4{width:40px; height: 40px;font-size: 30px; padding:25px 5%;display:inline-block;}
+
+
+
+
+
+#general_soluciones {
+  background-color: grey;
+}
+
+
+
+#general_soluciones img {
+width: 100PX;
+}

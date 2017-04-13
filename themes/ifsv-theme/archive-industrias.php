@@ -1,4 +1,18 @@
 <?php get_header();?>
+
+<header>
+	<div id="title">
+		<h3> Industrias </h3>
+	</div>		
+	<div id="banner">	
+		<div id="banner_title">
+			<h2> Lorem ipsum lorem </h2>
+		</div>
+	</div>
+</header>
+
+
+
 <div id="wrapper">
 
 <div id="general_menu">
