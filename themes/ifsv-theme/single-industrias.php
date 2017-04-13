@@ -1,7 +1,4 @@
 <?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
-<?php get_footer(); ?>	
-
-
 <div id="wrapper">
 
 				<div id="industria_layout">
@@ -33,3 +30,4 @@
 				</div>
 
 </div>
+<?php get_footer(); ?>

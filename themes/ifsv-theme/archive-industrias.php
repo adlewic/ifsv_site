@@ -13,7 +13,7 @@
 
 
 
-<div id="wrapper">
+<!-- <div id="wrapper"> -->
 
 <div id="general_menu">
 	<?php 
@@ -26,10 +26,10 @@
 				?>
 					<li>
 						<a href="<?php the_permalink(); ?>">
-							<li>
+							<div>
 								<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
 								<h4> <?php the_title(); ?> </h4>
-							</li>
+							</div>
 						</a>
 					</li>
 			<?php 
