@@ -22,7 +22,7 @@
 
 			<section>
 				<article class="static">
-					<img id="ifs_logo" src="images/v_logos/IFS.png">
+					<img id="ifs_logo" src="<?php echo get_template_directory_uri(); ?>/images/v_logos/IFS.png">
 					<br><br><br>
 					<h3> 
 						<?php echo 'IFS Applications solutions that enable capability management'; ?>
