@@ -10,16 +10,38 @@
 		</section>
 	
 		<section id="wrapper">
-			<section id="news">
-				<article>
-					<div>
-						 <h4> <?php echo 'Title news  Title news'; ?></h4>
-						 <p>
-							<?php echo 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'; ?>
-						 </p>
-					</div>
-				</article>
-			</section>
+				<?php 
+					$args = array(
+						'post_type'=>'noticias',
+						'posts_per_page'=>2,
+						'post_status'=>'publish',
+						'orderby'=>'date',
+						'order'=>'DESC'
+						);
+					$noticias = new WP_Query($args);
+					if($noticias->have_posts()):
+				?>
+						<section id="news">
+						<?php
+							while($noticias->have_posts()):
+								$noticias->the_post();
+							?>
+								<article>
+									<div>
+										 <h4> <?php the_title(); ?></h4>
+										 <p>
+											<?php the_content(); ?>
+										 </p>
+									</div>
+								</article>
+						<?php 
+							endwhile;
+							wp_reset_postdata();
+							?>
+						</section>
+				<?php		
+					endif;	
+				?>		
 
 			<section>
 				<article class="static">
