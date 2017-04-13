@@ -13,13 +13,13 @@
 
 <div id="wrapper">
 
-	<div id="customers_info">
+<!-- 	<div id="customers_info">
 		<h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
 		 amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua.
 		</h5>
-	</div>
+	</div> -->
 </div>
 
 
@@ -36,8 +36,8 @@
 					the_post();
 				?>
 					<li> 
-						<img src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
-							<h4> <?php the_title(); ?></h4>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/g_icons/conect.svg"><br>
+						<h4> <?php the_title(); ?></h4>
 					</li>
 			<?php 
 				endwhile;

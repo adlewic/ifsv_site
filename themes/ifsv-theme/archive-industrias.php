@@ -4,7 +4,7 @@
 	<div id="title">
 		<h3> Industrias </h3>
 	</div>		
-	<div id="banner">	
+	<div id="banner" class="b2">	
 		<div id="banner_title">
 			<h2> Lorem ipsum lorem </h2>
 		</div>
@@ -24,9 +24,13 @@
 				while(have_posts()):
 					the_post();
 				?>
-					<li> 
-						<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
-							<h4> <?php the_title(); ?></h4>
+					<li>
+						<a href="<?php the_permalink(); ?>">
+							<li>
+								<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+								<h4> <?php the_title(); ?> </h4>
+							</li>
+						</a>
 					</li>
 			<?php 
 				endwhile;
@@ -36,5 +40,6 @@
 		endif;
 		?>
 </div>
+
 
 <?php get_footer(); ?>	

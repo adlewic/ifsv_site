@@ -18,5 +18,6 @@
 				<?php the_content(); ?>
 			</h5>
 		</div>
+	
 </div><!-- wrapper -->
 <?php get_footer(); ?>
