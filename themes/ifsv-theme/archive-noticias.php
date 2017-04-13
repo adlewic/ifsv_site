@@ -19,6 +19,7 @@
 						the_post();
 				?>
 						<!-- post_noticia  -->
+						<a href="<?php the_permalink(); ?>">
 						<article class="single_post">
 							<div>
 								<?php the_post_thumbnail(); ?>
@@ -30,6 +31,7 @@
 							 	</p>
 							</div>
 						</article>
+						</a>
 					<!-- END post_noticia -->
 				<?php 
 					endwhile;

@@ -1687,7 +1687,7 @@ border-left: 0px;
 #caracteristicas li{
   padding: 0px;
   margin: 0px;
-list-style-type: none;
+  list-style-type: none;
   border-bottom: 0.2px solid #EDEDED;
 }
 
@@ -1695,3 +1695,8 @@ list-style-type: none;
 #caracteristicas h4{
   margin-top: 20px;
 }
+
+ #single_news p{
+    color: purple;
+ }
+
