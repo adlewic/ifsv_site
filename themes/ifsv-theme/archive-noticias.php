@@ -2,11 +2,17 @@
 	 	<!-- small header -->
 		<header>
 			<div id="title">
-				<h3> Noticias </h3>
+				<h3>
+					<?php 
+						$pt_name = ucfirst(get_post_type());
+						echo $pt_name;
+						?>
+				</h3>
 			</div>		
 			<div id="banner">	
 				<div id="banner_title">
-					<h2> Lorem ipsum lorem </h2>
+					<!--ESTO PUED SER EL ATTRIBUTE ALT DE LA IMÁGEN-->
+					<h2> <?php echo esc_html('Lorem ipsum lorem'); ?> </h2>
 				</div>
 			</div>
 		</header>
@@ -21,12 +27,18 @@
 						<!-- post_noticia  -->
 						<article class="single_post">
 							<div>
-								<?php the_post_thumbnail(); ?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail(); ?>
+								</a>
 							</div>
 							<div>
-								<h4> <?php the_title(); ?> </h4>
+								<h4>
+									<a href="<?php the_permalink(); ?>">
+										<?php the_title(); ?>
+									</a>
+								</h4>
 							 	<p>
-							 		 <?php the_content(); ?>
+							 		 <?php the_excerpt(); ?>
 							 	</p>
 							</div>
 						</article>
