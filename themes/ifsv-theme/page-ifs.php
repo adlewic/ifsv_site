@@ -1,4 +1,9 @@
-<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
+<?php 
+	get_header(); 
+		if(have_posts()):
+			while(have_posts()):
+				the_post();
+	?>
 <!-- small header -->
 	<header>
 		<div id="title">
@@ -16,12 +21,16 @@
 		<div id="sec_first">
 			<div id="one"> <?php the_title(); ?> </div>	
 			<div id="two">	
-				<p>
-				   <?php the_content(); ?>
-				</p>
+			   <?php the_content(); ?>
 			</div>
 		</div>
+	</div>	
+<?php
+			endwhile;
+		endif;
+?>
 
+	<div id="wrapper">	
 	<!-- section 2  -->
 		<div id="sec_second">
 			<ul id="ifs_menu">

@@ -1,4 +1,9 @@
-<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
+<?php 
+	get_header(); 
+	if(have_posts()):
+		while(have_posts()):
+			the_post();
+	?>
 		 <!-- small header -->
 		<header>
 			<div id="title">
@@ -19,4 +24,8 @@
 			</h5>
 		</div>
 </div><!-- wrapper -->
-<?php get_footer(); ?>
+<?php 
+		endwhile;
+	endif;
+	get_footer(); 
+	?>
