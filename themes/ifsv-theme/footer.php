@@ -6,7 +6,7 @@
 					
 					<div class="three columns">
 						Carlos Pereyra 8, Viaducto Piedad <br>
-						C.P. 08200, Ciudad de México.<br>
+						C.P. 08200, Ciudad de México.<br><br>
 						<a >Contacto </a>
 					</div>	
 					<div class="three columns">
@@ -21,7 +21,6 @@
 				</div>
 
 				<div class="twelve columns base">
-				
 				</div>
 			</footer>
 			<?php wp_footer(); ?>

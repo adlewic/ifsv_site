@@ -5,11 +5,13 @@
 			
 		</section>		
 
-		<section id="banner" class="b0">
-			<div id="principal"><?php echo "Soluciones innovadoras para la simplificación de tu industria."; ?></div>
+		<section id="banner" class="b2">
+			<div id="principal"><?php echo " Un conjunto de aplicaciones único e integrado para negocios globales y exigentes."; ?></div>
 		</section>
 	
-		<section id="wrapper">
+		<div id="wrapper">
+
+
 				<?php 
 					$args = array(
 						'post_type'=>'noticias',
@@ -21,16 +23,29 @@
 					$noticias = new WP_Query($args);
 					if($noticias->have_posts()):
 				?>
-						<section id="news">
+						<div id="news">
+
+						<div id="estatico">
+							<div class="img_news">
+									
+							</div>
+							<div id="estatico_caption" class="caption_news">
+								 <h4> hola mundo </h4>
+							</div>
+
+						</div>
+
 						<?php
 							while($noticias->have_posts()):
 								$noticias->the_post();
 							?>
+
+
 								<article class="clearfix latest">
 										<div class="img_news">
 											<?php the_post_thumbnail(); ?>
 										</div>
-										<div>
+										<div class="caption_news">
 											 <h4> <?php the_title(); ?></h4>
 											<!--  <p>
 												<?php the_content(); ?>
@@ -41,25 +56,39 @@
 							endwhile;
 							wp_reset_postdata();
 							?>
-						</section>
+						</div>
 				<?php		
 					endif;	
 				?>		
 
-			<section id="static">
-				<article>
+
+
+		<div id="static">
+				<article class="one">
 					<img id="ifs_logo" src="<?php echo get_template_directory_uri(); ?>/images/v_logos/IFS.png">
 					<br><br><br>
-					<h4> 
-						<?php echo 'IFS Applications soluciones que permiten la gestion de capacidades'; ?>
-					</h4>
+					<h3> 
+						<?php echo 'IFS Applications soluciones que permiten la gestion de capacidades.'; ?>
+					</h3>
 				</article>
 
-				<article>
-					<h3> asdasdasdas</h3>
+				<article class="two">
+					<br><br><br>
+					<h3> Lo que ifs puede hacer para la industria de la construcción </h3>
+
 				</article>
-			</section>
-		</section>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		</div>
 
 </div>
 <?php get_footer(); ?>
