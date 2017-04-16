@@ -36,8 +36,11 @@
 					the_post();
 				?>
 					<li> 
-						<img src="<?php echo get_template_directory_uri(); ?>/images/g_icons/conect.svg"><br>
-						<h4> <?php the_title(); ?></h4>
+						<a href="<?php the_permalink(); ?>">
+							<!-- <img src="<?php //the_post_thumbnail(); ?>"> -->
+							<img src="<?php echo get_template_directory_uri(); ?>/images/g_icons/conect.svg"><br>
+							<h4> <?php the_title(); ?></h4>
+						</a>
 					</li>
 			<?php 
 				endwhile;
