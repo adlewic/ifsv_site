@@ -4,7 +4,7 @@
 	<div id="title">
 		<h3> Soluciones </h3>
 	</div>		
-	<div id="banner">	
+	<div id="banner" class="b5">	
 		<div id="banner_title">
 			<h2> Lorem ipsum lorem </h2>
 		</div>
