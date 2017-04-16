@@ -1,35 +1,43 @@
-<?php get_header(); if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
-<?php get_footer(); ?>	
+<?php 
+	get_header(); 
+	if(have_posts()):
+		while(have_posts()):
+			the_post();
+?>
+	<div id="wrapper">
 
+		<div id="industria_layout">
+			<div class="first">
+					<img class="i_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>			
+					<h3> <?php the_title();?></h3>
+			</div>
 
-<div id="wrapper">
+			<div class="sec">
+					<h4><?php the_excerpt(); ?></h4>
+					<p><?php the_content(); ?></p>
+			</div>
 
-				<div id="industria_layout">
-					<div class="first">
-							<img class="i_icons" src="../images/g_icons/jet.svg"><br>			
-							<h3>  Aeroespacial y Defensa </h3>
-					</div>
-
-					<div class="sec">
-								<!-- type of bussineses  -->
-							<h4> IFS permite la gestion con capacidad en tierra, mar y aire</h4>
-							<p>
-								Con el aumento de los retos de los mercados emergentes, las nuevas líneas de productos, nuevas tecnologías, nuevas regulaciones, nuevas exigencias y nuevas formas de hacer negocios combinados con el crecimiento estratégico, adquisiciones / fusiones y desafíos de los modelos de costos del operador.
-							</p>
-					</div>
-
-					<div id="caracteristicas">
-						<ul>
-							<li>
-								<h4>Caracteristica title</h4>
-								<p>
-									 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamc
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-</div>
+			<div id="caracteristicas">
+				<ul>
+					<?php 
+						$_spec1_arr_meta  = get_post_meta($post->ID, '_spec1_arr_meta', true);
+						if($_spec1_arr_meta):
+							foreach ($_spec1_arr_meta as $key => $value):
+					?>
+								<li>
+									<h4><?php echo esc_html($key); ?></h4>
+									<p><?php echo esc_html($value); ?></p>
+								</li>
+					<?php 
+							endforeach;
+						endif;	
+					?>
+				</ul>
+			</div>
+		</div>
+	</div>
+<?php 
+		endwhile;
+	endif;	
+get_footer();
+?>
