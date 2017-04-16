@@ -25,6 +25,7 @@
 						the_post();
 				?>
 						<!-- post_noticia  -->
+						<a href="<?php the_permalink(); ?>">
 						<article class="single_post">
 							<div>
 								<a href="<?php the_permalink(); ?>">
@@ -42,6 +43,7 @@
 							 	</p>
 							</div>
 						</article>
+						</a>
 					<!-- END post_noticia -->
 				<?php 
 					endwhile;

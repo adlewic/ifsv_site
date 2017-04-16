@@ -218,21 +218,18 @@ header #banner_title{
   margin: 0 auto;
 }
 
-#news{width: 70%;
-      background-color: pink;
-      height: 300px;
-      float: left;}
-
 
 
 /*Article news*/
 .post-type-archive-noticias article.single_post{width:calc(33% - 10px);display:inline-block;vertical-align: top;margin:0px 5px;}
+
+
 .single_post div img{width:100%;height:auto;}
 
-#static article{
- height: 300px;
- border: 1px solid #ccc;
-}
+
+
+
+
 #second{ background-color: #E0DAEA;}
 #ifs_logo{ padding: 15px 15px; margin: 25px 15px 0px 0px; float: right; width: 140px;}
 
@@ -720,7 +717,6 @@ footer li{
 }
 
 /*
-
 section{
   float: left;
 }*/
@@ -1494,8 +1490,24 @@ th {
 
 
 #contact_info h4{width:40px; height: 40px;font-size: 30px; padding:25px 5%;display:inline-block;}
-.img_news{width:100%;text-align: center;height:250px;position:relative;overflow: hidden;}
-.img_news img{width:100%;height:auto;position:absolute;top:-9999px;left:-9999px;right:-9999px;bottom:-9999px;margin:auto;}
+
+
+.img_news{width:100%;
+          text-align: center;
+          height:250px;
+          position:relative;
+          overflow: hidden;}
+
+.img_news img{width:100%;
+              height:auto;
+              position:absolute;
+              top:-9999px;
+              left:-9999px;
+              right:-9999px;
+              bottom:-9999px;
+              margin:auto;}
+
+
 #news article{margin-bottom:60px;}
 #news article div p{padding:5px 20px 0px 20px;}
 #news article div h4{padding:5px 20px 0px 40px;}
@@ -1670,16 +1682,69 @@ list-style-type: none;
   margin-top: 20px;
 }
 
-.latest{
-  background-color: blue;
-  width: 50%;
-  float: left;
-  height: 300px;
-}
+
 
 
 #static{
-  background-color: green;
   width: calc(30%);
   float: right;
+
+
 }
+
+#news{width: 70%;
+      /*background-color: pink;*/
+      float: left;
+    }
+
+#static h3{
+  color: grey;
+  text-transform: none;
+  font-weight:lighter;
+  margin: 10px 10px;
+  float: left;
+  border: 1px solid #ccc;
+  width: 50%;
+  font-size: 12pt;
+}
+
+
+.latest{
+  width: 50%;
+  float: left;
+  height: 350px;
+}
+
+
+.caption_news{
+  background-color: #f8f8f8;
+  height: 100px;
+  width: 100%;
+}
+
+.caption_news h4{
+  font-weight: lighter;
+}
+
+
+#estatico{
+/*  background-color: orange;*/
+}
+
+
+#estatico_caption{
+  background-color: #f8f8f8;
+
+}
+
+#static article{
+  /*border: 1px solid #ccc;*/
+ height: 350px;
+}
+
+
+#static  .two{
+  background-color: #f4edf6;
+}
+
+
