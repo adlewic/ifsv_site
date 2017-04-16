@@ -729,7 +729,6 @@ footer li{
 }
 
 /*
-
 section{
   float: left;
 }*/
@@ -853,6 +852,8 @@ padding-top: 12%;
   float: left;
   background-color: #ccc;
 }
+
+
 
 /*HOVER STYLES 
    ========================================================================== */
@@ -1668,7 +1669,7 @@ border-left: 0px;
 #caracteristicas li{
   padding: 0px;
   margin: 0px;
-  list-style-type: none;
+list-style-type: none;
   border-bottom: 0.2px solid #EDEDED;
 }
 
@@ -1676,7 +1677,6 @@ border-left: 0px;
 #caracteristicas h4{
   margin-top: 20px;
 }
-
 
 .latest{
   background-color: blue;
