@@ -6,7 +6,7 @@
 		</section>		
 
 		<section id="banner" class="b0">
-			<div id="principal"><?php echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit"; ?></div>
+			<div id="principal"><?php echo "Soluciones innovadoras para la simplificación de tu industria."; ?></div>
 		</section>
 	
 		<section id="wrapper">
@@ -26,16 +26,16 @@
 							while($noticias->have_posts()):
 								$noticias->the_post();
 							?>
-								<article class="clearfix">
-									<div>
+								<article class="clearfix latest">
 										<div class="img_news">
 											<?php the_post_thumbnail(); ?>
 										</div>
-										 <h4> <?php the_title(); ?></h4>
-										 <p>
-											<?php the_content(); ?>
-										 </p>
-									</div>
+										<div>
+											 <h4> <?php the_title(); ?></h4>
+											<!--  <p>
+												<?php the_content(); ?>
+											 </p> -->
+										</div>
 								</article>
 						<?php 
 							endwhile;
@@ -46,18 +46,17 @@
 					endif;	
 				?>		
 
-			<section>
-				<article class="static">
-
+			<section id="static">
+				<article>
 					<img id="ifs_logo" src="<?php echo get_template_directory_uri(); ?>/images/v_logos/IFS.png">
 					<br><br><br>
-					<h3> 
+					<h4> 
 						<?php echo 'IFS Applications soluciones que permiten la gestion de capacidades'; ?>
-					</h3>
+					</h4>
 				</article>
 
-				<article class="static" id="second">
-					<h3> </h3>
+				<article>
+					<h3> asdasdasdas</h3>
 				</article>
 			</section>
 		</section>
