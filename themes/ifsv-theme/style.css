@@ -229,15 +229,6 @@ header #banner_title{
 .post-type-archive-noticias article.single_post{width:calc(33% - 10px);display:inline-block;vertical-align: top;margin:0px 5px;}
 .single_post div img{width:100%;height:auto;}
 
-
-#static{
-  background-color: green;
-  width: calc(30%);
-  float: right;
-}
-
-
-
 #static article{
  height: 300px;
  border: 1px solid #ccc;
@@ -1683,4 +1674,11 @@ list-style-type: none;
   width: 50%;
   float: left;
   height: 300px;
+}
+
+
+#static{
+  background-color: green;
+  width: calc(30%);
+  float: right;
 }
