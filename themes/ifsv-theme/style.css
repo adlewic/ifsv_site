@@ -73,11 +73,12 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
   font-weight: 300;
   position: absolute;
   font-size: 20pt;
-  position: absolute;
   bottom: 0;
-  width: 100%;
-  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  /*border: 1px solid #fff;*/
   padding-bottom: 170px;
+  text-align: center;
 }
 
 
@@ -161,10 +162,11 @@ nav div ul li{
 }
 
 
-a{
+ nav div ul  li a{
   color: #666666;
   text-decoration: none;
-    font-weight: 100;
+  font-weight: 100;
+  letter-spacing: 1px;
 
 }
 
@@ -187,6 +189,7 @@ a{
   position: relative;
 }
 
+.b00{background-image: url(./images/banners/b00.jpg);background-size: 100%;background-position: center;background-repeat: no-repeat;}
 .b0{background-image: url(./images/banners/b0.jpg);background-size: 100%;background-position: center;background-repeat: no-repeat;}
 .b1{background-image: url(./images/banners/b1.jpg);background-size: 100%;background-position: center;background-repeat: no-repeat;}
 .b2{background-image: url(./images/banners/b2.jpg);background-size: 100%;background-position: center;background-repeat: no-repeat;}
@@ -367,7 +370,7 @@ color: #79618e;
   width: 100%;
   border: 1px solid #ccc;
   height: 200px;
-  background: purple;
+  /*background: purple;*/
 }
 
 #sec_first #one{
@@ -375,6 +378,7 @@ color: #79618e;
   /*background-color: grey;*/
   float: left;
   height: 200px;
+  font-size: 70pt;
 }
 
 #sec_first #two{
@@ -1597,8 +1601,6 @@ margin-top: 20px;
   text-transform: uppercase;
   font-size: 12pt;
   font-weight: lighter;
-   /*border: 1px solid #ccc;*/
-
 }
 
 #industria_layout .sec p{
@@ -1611,7 +1613,6 @@ margin-top: 20px;
 
 #industria_layout .sec{
 width: 59.5%;
-/*height: 300px;*/
 float: left;
 border: .2px solid #ebeaeb;
 border-left: 0px;
@@ -1623,7 +1624,6 @@ border-left: 0px;
   font-size: 12pt;
   margin-left: 40px;
   margin-top: 50px;
-
 }
 
 
@@ -1665,7 +1665,7 @@ border-left: 0px;
 
 
 #caracteristicas ul{
-   padding: 0px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -1673,7 +1673,7 @@ border-left: 0px;
 #caracteristicas li{
   padding: 0px;
   margin: 0px;
-list-style-type: none;
+  list-style-type: none;
   border-bottom: 0.2px solid #EDEDED;
 }
 
@@ -1682,19 +1682,15 @@ list-style-type: none;
   margin-top: 20px;
 }
 
-
-
-
 #static{
   width: calc(30%);
   float: right;
-
-
 }
 
-#news{width: 70%;
-      /*background-color: pink;*/
-      float: left;
+
+#news{
+  width: 70%;
+  float: left;
     }
 
 #static h3{
@@ -1703,8 +1699,8 @@ list-style-type: none;
   font-weight:lighter;
   margin: 10px 10px;
   float: left;
-  border: 1px solid #ccc;
-  width: 50%;
+  /*border: 1px solid #ccc;*/
+  width: 100%;
   font-size: 12pt;
 }
 
@@ -1722,13 +1718,45 @@ list-style-type: none;
   width: 100%;
 }
 
-.caption_news h4{
-  font-weight: lighter;
+
+
+
+.caption_news h5{
+  /*border: 1px solid #ccc;*/
+  width: 25%;
+  font-weight: 300;
+  color: #666;
+  padding: 10px 20px;
+  float: left;
+  letter-spacing: .5px;
 }
 
 
+/*Titulo de la noticia post*/
+.caption_news div{
+  font-weight: lighter;
+  /*border: 1px solid #ccc;*/
+  height: 40px;
+  padding: 15px 10px;
+  color: #584c5a; 
+  font-size: 13pt;
+}
+
+.caption_news p{
+  /*border: 1px solid #ccc;*/
+  width: 75%;
+  float: right;
+  color: #666;
+  font-size: 9pt;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 5px 20px 10px 0px;
+}
+
+
+
 #estatico{
-/*  background-color: orange;*/
+  background-image: url(./images/banners/b9.jpg);background-size: 100%;background-position: center;background-repeat: no-repeat;
 }
 
 
@@ -1743,8 +1771,46 @@ list-style-type: none;
 }
 
 
-#static  .two{
-  background-color: #f4edf6;
+#static  .two{ height: 175px;}
+#static  .two h6{ font-weight: lighter;  padding: 15px 25px; font-size: 12pt;color:#666; }
+
+#static  .one a{ font-weight: lighter;  padding: 15px 25px; font-size: 12pt;  color: #584c5a; font-weight:400; text-align: right;}
+#static  .one a:hover{ text-decoration: underline; }
+
+
+#static  .two a{ font-weight: lighter;  padding: 15px 25px; font-size: 12pt;  color: #584c5a; font-weight:400; text-align: right;}
+#static  .two a:hover{ text-decoration: underline; }
+
+
+
+
+
+
+.two #txt{
+  color: #fff;
+  font-size: 15pt;
+  font-weight: lighter;
+  padding: 15px 20px;
+  border: 1px solid #000;
+  float: left;
+  text-align: right;
+  width: calc(80%);
 }
 
 
+.more{
+  float: right;
+  text-transform: uppercase;
+  font-size: 8pt;
+
+}
+
+
+#newsletter{ background-color: #e4dbe6;}
+#newsletter input{  width: 50%;border: none;margin-left: 25px;opacity: 0.8;}
+
+
+
+#contact{
+background-color: #ebebeb;
+}
