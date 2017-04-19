@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 	 <!-- small header -->
 <div id="wrapper">
-		<section id="title">
-			
-		</section>		
+		<section id="title"></section>
 
 		<section id="banner" class="b0">
 			<div id="principal"><?php echo "Soluciones innovadoras para la simplificación de tu industria."; ?></div>
@@ -28,13 +26,16 @@
 							?>
 								<article class="clearfix latest">
 										<div class="img_news">
-											<?php the_post_thumbnail(); ?>
+											<a href="<?php the_permalink(); ?>">
+												<?php the_post_thumbnail(); ?>
+											</a>
 										</div>
 										<div>
-											 <h4> <?php the_title(); ?></h4>
-											<!--  <p>
-												<?php the_content(); ?>
-											 </p> -->
+											 <h4>
+											 	<a href="<?php the_permalink(); ?>">
+											 		<?php the_title(); ?>
+											 	</a>
+											 </h4>
 										</div>
 								</article>
 						<?php 
