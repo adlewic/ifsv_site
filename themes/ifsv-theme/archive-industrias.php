@@ -27,7 +27,7 @@
 					<li>
 						<a href="<?php the_permalink(); ?>">
 							<div>
-								<img class="g_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>
+								<img class="g_icons" src="<?php echo get_template_directory_uri().'/images/icons_industries/'.esc_html($post->post_name).'.svg'; ?>"><br>
 								<h4> <?php the_title(); ?> </h4>
 							</div>
 						</a>

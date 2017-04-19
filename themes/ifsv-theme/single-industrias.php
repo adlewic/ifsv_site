@@ -8,7 +8,7 @@
 
 		<div id="industria_layout">
 			<div class="first">
-					<img class="i_icons" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/jet.svg"><br>			
+					<img class="i_icons" src="<?php echo get_template_directory_uri().'/images/icons_industries/'.esc_html($post->post_name).'.svg'; ?>"><br>
 					<h3> <?php the_title();?></h3>
 			</div>
 

@@ -3,11 +3,15 @@
 <div id="wrapper">
 		<section id="title"></section>
 
-		<section id="banner" class="b0">
-			<div id="principal"><?php echo "Soluciones innovadoras para la simplificación de tu industria."; ?></div>
+		<section id="banner" class="b00">
+			<div id="principal">
+				<?php echo " Un conjunto de aplicaciones único e integrado para negocios globales y exigentes."; ?>				
+			</div>
 		</section>
 	
-		<section id="wrapper">
+		<div id="wrapper">
+
+
 				<?php 
 					$args = array(
 						'post_type'=>'noticias',
@@ -19,7 +23,24 @@
 					$noticias = new WP_Query($args);
 					if($noticias->have_posts()):
 				?>
-						<section id="news">
+						<div id="news">
+
+						<div id="estatico">
+							<div class="img_news">
+									
+							</div>
+							<div id="estatico_caption" class="caption_news">
+								<h5> Industrias  – </h5>
+								<div> Construcción y Contratistas </div>
+								<p>
+									Decrubre los beneficios que IFS puede traer a tu industria. 
+									IFS offers agile, industry-proven software for demanding industries.
+									Industries that require real-time project control, asset integrity management, traceability and agility. 
+								</p>
+							</div>
+
+						</div>
+
 						<?php
 							while($noticias->have_posts()):
 								$noticias->the_post();
@@ -30,37 +51,62 @@
 												<?php the_post_thumbnail(); ?>
 											</a>
 										</div>
-										<div>
-											 <h4>
-											 	<a href="<?php the_permalink(); ?>">
-											 		<?php the_title(); ?>
-											 	</a>
-											 </h4>
+
+										<div class="caption_news">
+											 <h5> Noticias -</h5>
+											
+											 <div> <?php the_title(); ?>  </div>
+											<!--  <p>
+												<?php the_content(); ?>
+											 </p> -->	
 										</div>
 								</article>
 						<?php 
 							endwhile;
 							wp_reset_postdata();
 							?>
-						</section>
+						</div>
 				<?php		
 					endif;	
 				?>		
 
-			<section id="static">
-				<article>
-					<img id="ifs_logo" src="<?php echo get_template_directory_uri(); ?>/images/v_logos/IFS.png">
-					<br><br><br>
-					<h4> 
-						<?php echo 'IFS Applications soluciones que permiten la gestion de capacidades'; ?>
-					</h4>
+
+		<div id="static">
+				<article class="one">
+					<br>
+					<h3> <?php echo 'Un conjunto de aplicaciones único e integrado para negocios globales y exigentes.'; ?>  </h3>
+					<a href=""> <?php echo esc_html('Conoce más'); ?> </a>
+					<img id="ifs_logo" src="<?php echo get_template_directory_uri(); ?>/images/logos_veyron/ifs.png">
 				</article>
 
-				<article>
-					<h3> asdasdasdas</h3>
-				</article>
-			</section>
-		</section>
+				<div class="two" id="newsletter">
+					<br><br>
+					<h6> ¿Preguntas? estamos aquí para ayudarte </h6>
+					<a href=""> Contáctanos </a>
+				</div>
+
+				<div class="two" id="contact">
+					<br> <br>
+					<h6> Conectemos </h6>
+					<div class="social_icons">
+						<a href="https://www.linkedin.com/company-beta/2869713/"> <img src="<?php echo get_template_directory_uri(); ?>/images/icons_social/linkedin.svg"> </a>
+					</div>
+					<div class="social_icons">
+						<a href="https://www.youtube.com/channel/UC4RfaP5LxC1QLXJF5pdpwQw"> <img src="<?php echo get_template_directory_uri(); ?>/images/icons_social/youtube.svg"></a>
+					</div>
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		</div>
 
 </div>
 <?php get_footer(); ?>

@@ -37,7 +37,7 @@
 				?>
 						<a href="#">	
 							<figure id="single_customer" class="imghvr-fade-in-left">
-							  <img src="<?php echo get_template_directory_uri(); ?>/images/g_logos/galdisa.png">
+							  <img src="<?php echo get_template_directory_uri().'/images/logo_customers/'.esc_html($post->post_name).'.png'; ?>">
 							  <figcaption>
 							  		<h4> <?php the_title(); ?> </h4>
 						  				<p>

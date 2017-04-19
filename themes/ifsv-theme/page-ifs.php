@@ -19,9 +19,13 @@
 	<div id="wrapper">
 	<!-- section 1  -->
 		<div id="sec_first">
-			<div id="one"> <?php the_title(); ?> </div>	
+			<div id="one"> 
+				<?php the_title(); ?>
+			</div>	
 			<div id="two">	
-			   <?php the_content(); ?>
+				<div>
+				    <?php the_content(); ?> 
+				</div>	
 			</div>
 		</div>
 	</div>	
@@ -35,19 +39,19 @@
 		<div id="sec_second">
 			<ul id="ifs_menu">
 				<li>
-					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/tool.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/icons_ifs/gestion.svg">
 					<h4> gestión de servicios y activos</h4>
 				</li>
 				<li>
-					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/factory.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/icons_ifs/factory.svg">
 					<h4> fabricación </h4> 
 				</li>
 				<li>
-					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/states.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/icons_ifs/proyectos.svg">
 					<h4> proyectos </h4> 
 				</li>
 				<li>
-					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/g_icons/conect.svg">
+					<img class="ifs_icon" src="<?php echo get_template_directory_uri(); ?>/images/icons_ifs/cadena.svg">
 					<h4> gestión de cadena de suministros </h4> 
 				</li>
 			</ul>
@@ -57,13 +61,13 @@
 		<div id="sec_third">
 			<div>
 				<p>
-					IFS Applications includes financials, human resources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
+					<?php echo esc_html('IFS Applications includes financials, human resources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom');?>
 				</p>
 			</div>
 
 			<div>
 				<p>
-					IFS Applications includes financials, human re- sources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom
+					<?php echo esc_html('IFS Applications includes financials, human re- sources, quality management, document management, customer relationship management (CRM), business intelligence, sustainability management and other core functionality to facilitate full life cycle management of products, assets, custom');?>
 				</p>
 			</div>
 		</div>
@@ -74,28 +78,28 @@
 			<ul>
 				<!-- yellow -->
 				<li>
-					<div class="square y">
+					<div class="square y hvr-grow">
 						Consolidación 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						Activos Fijos 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						Cuentas por Cobrar 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						Cuentas por Pagar
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						Tesorería 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						Gestión de Presupuestos 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						eFacturación 
 					</div>
-					<div class="square y">
+					<div class="square y hvr-grow ">
 						IFS Finanzas ™  
 					</div>
 				</li>
@@ -337,7 +341,7 @@
 			<hr>
 				<ul>
 					<li>
-						<div class="square grey">
+						<div class="square grey hvr-grow">
 							Reglas Contables
 						</div>
 					</li>
