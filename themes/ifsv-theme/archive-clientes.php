@@ -13,19 +13,15 @@
 			</div>		
 			<div id="banner" class="b6">	
 				<div id="banner_title">
-					<h2> Lorem ipsum lorem </h2>
+					<h2><?php echo esc_html('Lorem ipsum lorem');?> </h2>
 				</div>
 			</div>
 		</header>
 
 		<div id="wrapper">
 			<div id="customers_info">
-				<h5> 
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-					 amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</h5>
+				<!--Esto no debería ser un heading sino un paragraph-->
+				<h5><?php echo esc_html('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');?></h5>
 			</div>
 
 			<div class="border" id="all_customers">
