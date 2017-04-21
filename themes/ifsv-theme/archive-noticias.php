@@ -9,7 +9,7 @@
 						?>
 				</h3>
 			</div>		
-			<div id="banner">	
+			<div id="banner" class="b5">	
 				<div id="banner_title">
 					<!--ESTO PUED SER EL ATTRIBUTE ALT DE LA IMÁGEN-->
 					<h2> <?php echo esc_html('Lorem ipsum lorem'); ?> </h2>
