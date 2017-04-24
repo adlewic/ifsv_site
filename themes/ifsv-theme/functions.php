@@ -156,15 +156,21 @@
 
 
 // THE EXECRPT FORMAT AND LENGTH /////////////////////////////////////////////////////
-	add_filter('excerpt_length', function($length){
+	// add_filter('excerpt_length', function($length){
+	// 	return 10;
+	// });
+
+
+
+	function custom_excerpt_length( $length ) {
 		return 10;
-	});
+	}
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-
+	
 	add_filter('excerpt_more', function(){
-		return ' <br> <a href="'.get_permalink().'" >leer más...</a>';
+		return '';
 	});
-
 
 
 
