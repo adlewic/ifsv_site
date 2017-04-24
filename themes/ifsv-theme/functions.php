@@ -107,7 +107,7 @@
 
 	if ( function_exists('add_image_size') ){
 		
-		// add_image_size( 'size_name', 200, 200, true );
+		add_image_size( 'banner_noticias', 460, 300, true );
 		
 		// cambiar el tamaño del thumbnail
 		/*

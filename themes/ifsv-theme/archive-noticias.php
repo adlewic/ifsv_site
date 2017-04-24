@@ -3,10 +3,7 @@
 		<header>
 			<div id="title">
 				<h3>
-					<?php 
-						$pt_name = ucfirst(get_post_type());
-						echo $pt_name;
-						?>
+					<?php $pt_name = ucfirst(get_post_type()); echo $pt_name; ?>
 				</h3>
 			</div>		
 			<div id="banner" class="b5">	
@@ -29,7 +26,7 @@
 						<article class="single_post">
 							<div>
 								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('banner_noticias'); ?>
 								</a>
 							</div>
 							<div>
