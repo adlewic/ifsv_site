@@ -148,11 +148,16 @@
 
 	});
 
+// ADD EXCERPT FOR PAGES //////////////////////////////////////////////////////////
+	add_action( 'init', 'ifsv_add_excerpts_to_pages' );
+	function ifsv_add_excerpts_to_pages() {
+	     add_post_type_support( 'page', 'excerpt' );
+	}
 
 
 // THE EXECRPT FORMAT AND LENGTH /////////////////////////////////////////////////////
 	add_filter('excerpt_length', function($length){
-		return 20;
+		return 10;
 	});
 
 
@@ -160,11 +165,6 @@
 		return ' <br> <a href="'.get_permalink().'" >leer más...</a>';
 	});
 
-// ADD EXCERPT FOR PAGES //////////////////////////////////////////////////////////
-	add_action( 'init', 'ifsv_add_excerpts_to_pages' );
-	function ifsv_add_excerpts_to_pages() {
-	     add_post_type_support( 'page', 'excerpt' );
-	}
 
 
 

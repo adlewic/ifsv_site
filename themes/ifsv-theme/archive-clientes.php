@@ -37,7 +37,7 @@
 							  <figcaption>
 							  		<h4> <?php the_title(); ?> </h4>
 						  				<p>
-						  					 <?php the_content(); ?>
+						  					 <?php the_excerpt(); ?>
 										</p>
 							  </figcaption>
 							</figure>   
